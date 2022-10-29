@@ -5,7 +5,8 @@ class CreateJobs < ActiveRecord::Migration[7.0]
       t.text :description
       t.string :locations
       t.date :expiry_date
-
+      t.string :tech
+      
       t.timestamps
     end
   end
