@@ -4,6 +4,42 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
+    <%= f.input :nickname,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "nickname" }%>
+    <%= f.input :developer,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "developer" }%>
+    <%= f.input :address,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "address" }%>
+    <%= f.input :mobile_phone,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "mobile_phone" }%>
+    <%= f.input :website_url,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "website_url" }%>
+    <%= f.input :linkedin_url,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "linkedin_url" }%>
+    <%= f.input :bio,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "bio" }%>
+    <%= f.input :experience_year,
+              required: true,
+              autofocus: true,
+              input_html: { autocomplete: "experience_year" }%>
+    <%= f.input :education_level,
+              required: true,
+              autofocus: true,
+              input_html: { autocomplete: "education_level" }%>
     <%= f.input :email, required: true, autofocus: true %>
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
