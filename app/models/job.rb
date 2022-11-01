@@ -6,5 +6,4 @@ class Job < ApplicationRecord
   validates :description, presence: true
   validates :locations, presence: true
   validates :expiry_date, presence: true
-  validates :tech, presence: true
 end
