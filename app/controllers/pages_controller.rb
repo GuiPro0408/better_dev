@@ -3,4 +3,8 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def developers
+    @developers = User.where(developer: true)
+  end
 end
