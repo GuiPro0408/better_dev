@@ -5,12 +5,10 @@ class ApplicationController < ActionController::Base
   def configure_permitted_parameters
     # For additional fields in app/views/devise/registrations/new.html.erb
     devise_parameter_sanitizer.permit(:sign_up,
-                                      keys: %i[nickname developer address mobile_phone website_url linkedin_url
-                                               experience_year education_level bio])
+                                      keys: [:nickname, :developer, :address, :mobile_phone, :website_url, :linkedin_url, :experience_year, :education_level, :bio])
 
     # For additional in app/views/devise/registrations/edit.html.erb
     devise_parameter_sanitizer.permit(:account_update,
-                                      keys: %i[nickname developer address mobile_phone website_url linkedin_url
-                                               experience_year education_level bio])
+                                      keys: [:nickname, :developer, :address, :mobile_phone, :website_url, :linkedin_url, :experience_year, :education_level, :bio])
   end
 end
