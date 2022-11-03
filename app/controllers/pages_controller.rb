@@ -7,4 +7,8 @@ class PagesController < ApplicationController
   def developers
     @developers = User.where(developer: true)
   end
+
+  def user_show
+    @user = User.find(params[:id])
+  end
 end

@@ -9,8 +9,8 @@
                 autofocus: true,
                 input_html: { autocomplete: "nickname" }%>
     <%= f.input :developer,
-                label: 'Are you a Developer ?',
-                as: :select, collection: [['Yes',true], ['No',false]],
+                label: 'I am a',
+                as: :select, collection: [['Developer',true], ['Recruiter',false]],
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "developer" }%>
