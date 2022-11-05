@@ -1,0 +1,18 @@
+<% if current_user.developer == false %>
+  <%= link_to("Create A job", new_job_path,  class: 'btn btn-primary my-3') %>
+<% end %>
+
+<% @jobs.each do |job| %>
+  <div class="card p-3">
+    <p><%= job.title %></p>
+    <p><%= job.description %></p>
+    <p><%= job.employment_type %></p>
+    <p><%= job.expiry_date %></p>
+    <p>By <%= job.user.nickname %></p>
+
+    <%= link_to("Read More", job_path(job), class: 'btn btn-primary') %>
+    <% if job.user == current_user %>
+      <%= link_to("Edit", edit_job_path(job), class: 'btn btn-info') %>
+    <% end %>
+  </div>
+<% end %>

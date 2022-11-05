@@ -1,7 +1,7 @@
 class Job < ApplicationRecord
   has_many :applications, dependent: :destroy
   has_many :users, through: :applications
-
+  belongs_to :user
   EMPLOYEMENT_TYPE = ["Full-time", "Part-time", "Freelance", "Temporary"]
 
   validates :title, presence: true
