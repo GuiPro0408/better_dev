@@ -1,0 +1,23 @@
+<h2><%= @job.title %></h2>
+<p>By : <%= @job.user.nickname %></p>
+
+<br><br>
+
+<h3>Job Details</h3>
+
+<% @job.description.split("\n").each do |para| %>
+  <p class = "pt-1"><%= para %></p>
+<% end %>
+<p>Locations : <%= @job.locations %></p>
+<p>Type of Emploment : <%= @job.employment_type %></p>
+<p>Expiry Date : <%= @job.expiry_date %></p>
+<% if @job.user == current_user %>
+  <%= link_to("Delete", job_path(@job), class: 'btn btn-danger btn-sm', data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}) %>
+<% end %>
+
+<div class="card mt-5 w-25">
+  <h3><%= @job.user.nickname %></h3>
+  <hr>
+  <h4>Bio</h4>
+  <h6><%= @job.user.bio %></h6>
+</div>

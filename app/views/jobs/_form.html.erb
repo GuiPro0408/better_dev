@@ -1,0 +1,8 @@
+<%= simple_form_for(job) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :locations %>
+  <%= f.select :employment_type, Job::EMPLOYEMENT_TYPE %>
+  <%= f.input :expiry_date %>
+  <%= f.submit %>
+<% end %>
