@@ -1,11 +1,16 @@
 class JobsController < ApplicationController
-  before_action :set_job, only: [:show, :edit, :update, :destroy]
+  before_action :set_job, only: [:show, :edit, :update, :destroy, :applied]
 
   def index
     @jobs = Job.includes(:user)
   end
 
   def show
+    @application = Application.new(job: @job)
+  end
+
+  def applied
+    @applied_dev = Application.where(job: @job)
   end
 
   def new
