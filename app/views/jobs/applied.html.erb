@@ -1,4 +1,4 @@
-<% if @job.user == current_user %>
+<% if @job.user == current_user && current_user.developer == false %>
   <h1><%= @job.title %></h1>
   <% @applied_dev.each do |application| %>
     <div class="card mb-3 p-3">
@@ -8,6 +8,9 @@
       <% end %>
       <p>By <%= application.user.nickname %></p>
       <p>Status : <strong><%= application.status %></strong></p>
+
+      <%= button_to("Accept", accept_application_path(application), method: :patch) %>
+      <%= button_to("Reject", reject_application_path(application), method: :patch) %>
     </div>
   <% end %>
 <% else %>

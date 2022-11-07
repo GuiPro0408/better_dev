@@ -11,6 +11,22 @@ class ApplicationsController < ApplicationController
     end
   end
 
+  def accept
+    @application = Application.find(params[:id])
+    # Your accept logic here
+    @application.status = 'accepted'
+    @application.save
+    redirect_to applied_job_path(@application), status: :see_other
+  end
+  
+  def reject
+    @application = Application.find(params[:id])
+    # Your reject logic here
+    @application.status = 'rejected'
+    @application.save
+    redirect_to applied_job_path(@application), status: :see_other
+  end
+
   private
 
   def application_params
