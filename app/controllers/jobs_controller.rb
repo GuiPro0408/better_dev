@@ -10,7 +10,9 @@ class JobsController < ApplicationController
   end
 
   def applied
-    @applied_dev = Application.where(job: @job)
+    @pending_applied_dev = Application.where(job: @job, status: 'pending')
+    @accepted_applied_dev = Application.where(job: @job, status: 'accepted')
+    @rejected_applied_dev = Application.where(job: @job, status: 'rejected')
   end
 
   def new

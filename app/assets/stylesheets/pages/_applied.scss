@@ -1,0 +1,17 @@
+.pending-col {
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgba(255, 206, 42, 0.3);
+}
+
+.accepted-col {
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgba(124, 255, 42, .3);
+}
+
+.rejected-col {
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgba(255, 64, 42, .3);
+}
