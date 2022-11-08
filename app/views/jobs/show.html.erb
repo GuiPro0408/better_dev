@@ -22,7 +22,7 @@
   <h6><%= @job.user.bio %></h6>
 </div>
 
-<% if current_user.developer == true %>
+<% if current_user.developer == true && @existed_application.present? %>
   <div class="form-wrapper">
     <%= simple_form_for [@job, @application] do |f| %>
       <div class="form-inputs">

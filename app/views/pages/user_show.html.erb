@@ -89,6 +89,38 @@
             </li>
           </ul>
         </div>
+
+        <div class="card py-3" style = "height:500px;overflow-y: scroll;">
+          <h2 class ="text-center mb-4">My Applications History</h2>
+          <% @user.applications.each do |application| %>
+            <div class="p-4 border shadow-sm mb-4 mx-auto bg-light" style = "width:90%;">
+              <div class="col">
+                <div class="profile-info">
+                  <h4><%= application.job.title %></h4>
+                  <% if application.status == 'accepted' %>
+                    <% status_color = 'text-success' %>
+                  <% elsif application.status == 'rejected' %>
+                    <% status_color = 'text-danger' %>
+                  <% else %>
+                    <% status_color = 'text-warning' %>
+                  <% end %>
+                  <span class="<%= status_color %> fw-bold"><%= application.status.capitalize %></span>
+                  <h5 class = "mt-4 fw-bold">Message :</h5>
+                  <div class="border border-1 p-2 mb-3">
+                    <% application.message.split("\n").each do |para| %>
+                      <h6 class = "pt-1 text-muted"><%= para %></h6>
+                    <% end %>
+                  </div>
+                  
+                  <h6>Date : <%= application.created_at.strftime("%Y-%m-%d") %></h6>
+                  <% if application.status == 'pending' %>
+                    <%= link_to "Delete", job_application_path(application), class: 'btn btn-danger', data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

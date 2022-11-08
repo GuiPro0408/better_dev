@@ -7,6 +7,7 @@ class JobsController < ApplicationController
 
   def show
     @application = Application.new(job: @job)
+    @existed_application = Application.find_by(user_id: current_user.id, job: @job)
   end
 
   def applied
