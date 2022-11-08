@@ -114,7 +114,7 @@
                   
                   <h6>Date : <%= application.created_at.strftime("%Y-%m-%d") %></h6>
                   <% if application.status == 'pending' %>
-                    <%= link_to "Delete", job_application_path(application), class: 'btn btn-danger', data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+                    <%= link_to "Delete", job_application_path(application.job_id), class: 'btn btn-danger', data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
                   <% end %>
                 </div>
               </div>
