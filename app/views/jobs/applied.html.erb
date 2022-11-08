@@ -1,18 +1,65 @@
 <% if @job.user == current_user && current_user.developer == false %>
-  <h1><%= @job.title %></h1>
-  <% @applied_dev.each do |application| %>
-    <div class="card mb-3 p-3">
-      <h5>Message : </h5>
-      <% application.message.split("\n").each do |para| %>
-        <p class = "pt-1"><%= para %></p>
+  <div class="conatiner-fluid d-flex justify-content-between p-3">
+    <h1><%= @job.title %></h1>
+    <%= button_to('Back', job_path(@job), class: 'btn btn-primary', method: :get) %>
+  </div>
+  <div class="row vh-100">
+    <div class="col pending-col pt-3">
+      <% @pending_applied_dev.each do |application| %>
+        <div class="p-4 border shadow-sm mb-4 mx-auto bg-light" style = "width:500px;">
+          <div class="col">
+            <div class="profile-info">
+              <h4 class = "mb-1 fw-bold"><%= application.user.nickname %></h4>
+              <span class="text-warning"><%= application.status %></span>
+              <h5 class = "mt-4 fw-bold">Message :</h5>
+              <% application.message.split("\n").each do |para| %>
+                <h6 class = "pt-1 text-muted"><%= para %></h6>
+              <% end %>      
+              <div class="d-flex gap-3 mt-4">
+                <%= button_to("Accept", accept_application_path(application), method: :patch, class: 'btn btn-outline-primary btn-sm rounded') %>
+                <%= button_to("Reject", reject_application_path(application), method: :patch, class: 'btn btn-outline-danger btn-sm rounded') %>
+              </div>
+            </div>
+          </div>
+        </div>
       <% end %>
-      <p>By <%= application.user.nickname %></p>
-      <p>Status : <strong><%= application.status %></strong></p>
-
-      <%= button_to("Accept", accept_application_path(application), method: :patch) %>
-      <%= button_to("Reject", reject_application_path(application), method: :patch) %>
     </div>
-  <% end %>
+
+    <div class="col accepted-col pt-3">
+      <% @accepted_applied_dev.each do |application| %>
+        <div class="p-4 border shadow-sm mb-4 mx-auto bg-light" style = "width:500px;">
+          <div class="col">
+            <div class="profile-info">
+              <h4 class = "mb-1 fw-bold"><%= application.user.nickname %></h4>
+              <span class="text-success"><%= application.status %></span>
+              <h5 class = "mt-4 fw-bold">Message :</h5>
+              <% application.message.split("\n").each do |para| %>
+                <h6 class = "pt-1 text-muted"><%= para %></h6>
+              <% end %>      
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="col rejected-col pt-3">
+      <% @rejected_applied_dev.each do |application| %>
+        <div class="p-4 border shadow-sm mb-4 mx-auto bg-light" style = "width:500px;">
+          <div class="col">
+            <div class="profile-info">
+              <h4 class = "mb-1 fw-bold"><%= application.user.nickname %></h4>
+              <span class="text-danger"><%= application.status %></span>
+              <h5 class = "mt-4 fw-bold">Message :</h5>
+              <% application.message.split("\n").each do |para| %>
+                <h6 class = "pt-1 text-muted"><%= para %></h6>
+              <% end %>      
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  
 <% else %>
   <div class="container py-5 bg-dark text-white py-5">
     <div class="row">
@@ -30,3 +77,4 @@
     </div>
   </div>
 <% end %>
+
