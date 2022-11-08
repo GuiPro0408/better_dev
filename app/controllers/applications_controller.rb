@@ -27,6 +27,12 @@ class ApplicationsController < ApplicationController
     redirect_to applied_job_path(@application), status: :see_other
   end
 
+  def destroy
+    @application = Application.find_by(job: params[:job_id], user: params[:id])
+    @application.destroy
+    redirect_to user_show_path(@application.user_id), status: :see_other
+  end
+
   private
 
   def application_params
