@@ -164,7 +164,7 @@ recruiter_3 = {
   linkedin_url: "https://www.linkedin.com/company/brainnestde/"
 }
 
-[dev_1, dev_2, dev_3, dev_4, dev_5, dev_6, dev_7 recruiter_1, recruiter_2, recruiter_3].each do |user|
+[dev_1, dev_2, dev_3, dev_4, dev_5, dev_6, dev_7, recruiter_1, recruiter_2, recruiter_3].each do |user|
   User.create(
     nickname: user[:nickname],
     developer: user[:developer],
