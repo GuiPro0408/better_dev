@@ -10,7 +10,7 @@
         <div class="p-4 border shadow-sm mb-4 mx-auto bg-light" style = "width:500px;">
           <div class="col">
             <div class="profile-info">
-              <h4 class = "mb-1 fw-bold"><%= application.user.nickname %></h4>
+              <h4 class = "mb-1 fw-bold"><a href="<%= user_show_path(application.user) %>" class = "text-dark" target = "_blank"><%= application.user.nickname %></a></h4>
               <span class="text-warning"><%= application.status %></span>
               <h5 class = "mt-4 fw-bold">Message :</h5>
               <% application.message.split("\n").each do |para| %>
@@ -32,7 +32,7 @@
         <div class="p-4 border shadow-sm mb-4 mx-auto bg-light" style = "width:500px;">
           <div class="col">
             <div class="profile-info">
-              <h4 class = "mb-1 fw-bold"><%= application.user.nickname %></h4>
+              <h4 class = "mb-1 fw-bold"><a href="<%= user_show_path(application.user) %>" class = "text-dark" target = "_blank"><%= application.user.nickname %></a></h4>
               <span class="text-success"><%= application.status %></span>
               <h5 class = "mt-4 fw-bold">Message :</h5>
               <% application.message.split("\n").each do |para| %>
@@ -50,7 +50,7 @@
         <div class="p-4 border shadow-sm mb-4 mx-auto bg-light" style = "width:500px;">
           <div class="col">
             <div class="profile-info">
-              <h4 class = "mb-1 fw-bold"><%= application.user.nickname %></h4>
+              <h4 class = "mb-1 fw-bold"><a href="<%= user_show_path(application.user) %>" class = "text-dark" target = "_blank"><%= application.user.nickname %></a></h4>
               <span class="text-danger"><%= application.status %></span>
               <h5 class = "mt-4 fw-bold">Message :</h5>
               <% application.message.split("\n").each do |para| %>
