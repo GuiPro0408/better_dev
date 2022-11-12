@@ -7,7 +7,8 @@
             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
               class="rounded-circle img-fluid" style="width: 150px;">
             <h5 class="my-3"><%= @user.nickname %></h5>
-            <p class="text-muted mb-1">Web Developer</p>
+            <% type = @user.developer ? "Web Developer" : "Recruiter" %>
+            <p class="text-muted mb-1"><%= type %></p>
             <p class="text-muted mb-4"><%= @user.address %></p>
             <p class="text-muted mb-4"><%= @user.bio %></p>
             <% if current_user == @user%>
@@ -89,38 +90,40 @@
             </li>
           </ul>
         </div>
-
-        <div class="card py-3" style = "height:500px;overflow-y: scroll;">
-          <h2 class ="text-center mb-4">My Applications History</h2>
-          <% @user.applications.each do |application| %>
-            <div class="p-4 border shadow-sm mb-4 mx-auto bg-light" style = "width:90%;">
-              <div class="col">
-                <div class="profile-info">
-                  <h4><%= application.job.title %></h4>
-                  <% if application.status == 'accepted' %>
-                    <% status_color = 'text-success' %>
-                  <% elsif application.status == 'rejected' %>
-                    <% status_color = 'text-danger' %>
-                  <% else %>
-                    <% status_color = 'text-warning' %>
-                  <% end %>
-                  <span class="<%= status_color %> fw-bold"><%= application.status.capitalize %></span>
-                  <h5 class = "mt-4 fw-bold">Message :</h5>
-                  <div class="border border-1 p-2 mb-3">
-                    <% application.message.split("\n").each do |para| %>
-                      <h6 class = "pt-1 text-muted"><%= para %></h6>
+        <% if @user.developer %>
+          <div class="card py-3" style = "height:500px;overflow-y: scroll;">
+            <h2 class ="text-center mb-4">My Applications History</h2>
+            <% @user.applications.each do |application| %>
+              <div class="p-4 border shadow-sm mb-4 mx-auto bg-light" style = "width:90%;">
+                <div class="col">
+                  <div class="profile-info">
+                    <h4><%= application.job.title %></h4>
+                    <% if application.status == 'accepted' %>
+                      <% status_color = 'text-success' %>
+                    <% elsif application.status == 'rejected' %>
+                      <% status_color = 'text-danger' %>
+                    <% else %>
+                      <% status_color = 'text-warning' %>
+                    <% end %>
+                    <span class="<%= status_color %> fw-bold"><%= application.status.capitalize %></span>
+                    <h5 class = "mt-4 fw-bold">Message :</h5>
+                    <div class="border border-1 p-2 mb-3">
+                      <% application.message.split("\n").each do |para| %>
+                        <h6 class = "pt-1 text-muted"><%= para %></h6>
+                      <% end %>
+                    </div>
+                    
+                    <h6>Date : <%= application.created_at.strftime("%Y-%m-%d") %></h6>
+                    <% if application.status == 'pending' %>
+                      <%= link_to "Delete", job_application_path(application.job_id), class: 'btn btn-danger', data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
                     <% end %>
                   </div>
-                  
-                  <h6>Date : <%= application.created_at.strftime("%Y-%m-%d") %></h6>
-                  <% if application.status == 'pending' %>
-                    <%= link_to "Delete", job_application_path(application.job_id), class: 'btn btn-danger', data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
-                  <% end %>
                 </div>
               </div>
-            </div>
-          <% end %>
-        </div>
+            <% end %>
+          </div>
+        <% end %>
+        
       </div>
     </div>
   </div>

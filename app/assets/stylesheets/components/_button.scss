@@ -1,0 +1,29 @@
+/* CSS */
+.btn-banner {
+  background-color: #af69ee;
+  border: 1px solid #af69ee;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-banner:hover {
+  box-shadow: rgba(250, 250, 250, .20) 0 3px 9px 0;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .btn-banner {
+    padding: 10px 30px;
+  }
+}
