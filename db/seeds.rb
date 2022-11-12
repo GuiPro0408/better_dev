@@ -107,6 +107,23 @@ dev_6 = {
   linkedin_url: "https://www.linkedin.com/in/vikash-beersye-7b4221111/"
 }
 
+dev_7 = {
+  nickname: "Bipin",
+  developer: true,
+  email: "bipin_r@live.com",
+  password: "Welcome13",
+  address: "37, Derby Street, Forest-Side",
+  mobile_phone: "5909 7502",
+  website_url: "https://www.hiremu.mu/",
+  experience_year: 11,
+  education_level: "Degree",
+  bio: "Hi, I'm Bipin! I'm a web developer with in-depth experience in UI/UX design. 
+  In a nutshell, I create websites that help organizations address business challenges and meet their needs. 
+  I manage everything from website navigation and layout to a company's web hosting and security architecture. My expertise lies within front-end web apps, 
+  and the main languages in my tech stack are JavaScript, React, and of course HTML/CSS. I’m a lifelong learner (currently taking a course on building AI chatbots with Python!) and love to read, run, and find new bubble tea shops in New York City.",
+  linkedin_url: "http://linkedin.com/bipinramkh"
+}
+
 recruiter_1 = {
   nickname: "SANDBOX",
   developer: false,
@@ -147,7 +164,7 @@ recruiter_3 = {
   linkedin_url: "https://www.linkedin.com/company/brainnestde/"
 }
 
-[dev_1, dev_2, dev_3, dev_4, dev_5, dev_6, recruiter_1, recruiter_2, recruiter_3].each do |user|
+[dev_1, dev_2, dev_3, dev_4, dev_5, dev_6, dev_7 recruiter_1, recruiter_2, recruiter_3].each do |user|
   User.create(
     nickname: user[:nickname],
     developer: user[:developer],
