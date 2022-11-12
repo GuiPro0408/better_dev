@@ -2,7 +2,7 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 175px 0;
+  padding: 150px 0;
 
   h1 {
     margin: 0;
@@ -26,4 +26,8 @@
   a {
     text-decoration: none;
   }
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 125px;
 }
