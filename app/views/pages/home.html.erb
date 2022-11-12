@@ -21,3 +21,130 @@
   </div>
 </div>
 
+<h1 class = "text-center my-5 fw-bold">OUR TALENTS</h1>
+
+<section id = "dev-section" class = "mx-auto mb-5">
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper content">
+
+        <% @developers.each do |dev| %>
+          <div class="swiper-slide card-dev">
+            <div class="card-content">
+              <div class="image">
+                <img src="https://cdn-icons-png.flaticon.com/512/1177/1177568.png" alt="">
+              </div>
+
+              <div class="media-icons">
+                <a href="<%= dev.linkedin_url %>"><i class="fa-brands fa-linkedin-in"></i></a> 
+                <a href="<%= dev.website_url %>"><i class="fas fa-globe"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name"><%= dev.nickname %></span>
+                <span class="profession">Web Developer</span>
+              </div>
+
+              <div class="button">
+                <%= link_to("About Me", user_show_path(dev), class: 'aboutMe') %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+
+      </div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+
+  </section>
+
+  <div class="container-fluid p-5" id = "about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 heading">
+          <h1 class="text-center mb-5">WELCOME</h1>
+        </div>
+      </div>
+      <div class="row gx-5">
+        <div class="col-md-5 d-flex flex-column justify-content-center gap-3">
+          <h1 class = "fw-bold">About Us</h1>
+          <p class = "fs-5">
+            Better Dev connects web developers with businesses, empowering anyone to find success wherever they are. We’re all about providing a conducive environment so that everyone can learn, thrive, and be the best version of themselves. 
+          </p>
+        </div>
+        <div class="col-md-7 d-flex justify-content-end">
+          <%= image_tag("illustration_2.svg", width: "500px") %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class = "text-center my-5 fw-bold">RECENT JOBS </h1>
+
+  <section id = "dev-section" class = "mx-auto mb-5">
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper content py-5">
+
+        <% @jobs.each do |job| %>
+          <div class="swiper-slide p-3 shadow card-job">
+            <div class="card-content">
+
+              <div class="card-title mb-4">
+                <p class="heading"><%= job.title %></p>
+              </div>
+
+              <p class="text-muted"><%= truncate job.description, length: 100 %></p>
+
+              <p class="text-muted mt-4"><%= image_tag "https://cdn-icons-png.flaticon.com/512/1177/1177568.png", width: "30px" %> <%= job.user.nickname %></p>
+
+              <div class="button mt-4">
+                <%= link_to("Read More", job_path(job), class: 'aboutMe') %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+
+      </div>
+    </div>
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <div class="container-fluid bg-dark">
+    <div class="container">
+      <footer class="py-3 my-4 text-white">
+        <div class="d-flex align-items-center justify-content-between">
+          <%= link_to root_path, class: "navbar-brand" do %>
+            <%= image_tag "logo.png", width: '100px'%>
+          <% end %>
+          <span class="mb-3 mb-md-0 text-muted">© 2022 Better Dev</span>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+<!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
