@@ -5,6 +5,7 @@
   </div>
   <div class="row vh-100">
     <div class="col pending-col pt-3">
+      <h2>Pending Applications</h2>
       <% @pending_applied_dev.each do |application| %>
         <div class="p-4 border shadow-sm mb-4 mx-auto bg-light" style = "width:500px;">
           <div class="col">
@@ -26,6 +27,7 @@
     </div>
 
     <div class="col accepted-col pt-3">
+      <h2>Accepted Applications</h2>
       <% @accepted_applied_dev.each do |application| %>
         <div class="p-4 border shadow-sm mb-4 mx-auto bg-light" style = "width:500px;">
           <div class="col">
@@ -43,6 +45,7 @@
     </div>
 
     <div class="col rejected-col pt-3">
+      <h2>Rejected Applications</h2>
       <% @rejected_applied_dev.each do |application| %>
         <div class="p-4 border shadow-sm mb-4 mx-auto bg-light" style = "width:500px;">
           <div class="col">
