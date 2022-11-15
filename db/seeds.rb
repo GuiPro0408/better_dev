@@ -5,7 +5,9 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+type_of_developers = ["Software developer", "Fullstack developer", "Back-end developer", "Front-end developer", "Mobile developers", "Webmaster"]
 User.destroy_all
+Job.destroy_all
 
 puts "Creating User..."
 
@@ -23,7 +25,9 @@ dev_1 = {
   Experienced in the design, debugging, development, and deployment of cloud-based scalable applications.
   Deliver accurate and timely results. Self-learning for new information at a rapid pace. Effective communication
   and collaboration with the team.",
-  linkedin_url: "https://www.linkedin.com/in/joelleteckyong/"
+  linkedin_url: "https://www.linkedin.com/in/joelleteckyong/",
+  image_url: "https://xsgames.co/randomusers/assets/avatars/male/1.jpg",
+  type_of_developers: type_of_developers.sample
 }
 
 dev_2 = {
@@ -40,7 +44,9 @@ dev_2 = {
   user interface, back-end development, testing, and debugging processes.
    Proficient in an assortment of technologies, including Android Java, PHP, ASP.NET, C#, IIS, Azure DevOps, Microsoft SQL Server and GIT. 
    Able to effectively self-manage during independent projects, as well as collaborate in a team setting.",
-  linkedin_url: "https://www.linkedin.com/in/mahnish-boodhram-93128a180/"
+  linkedin_url: "https://www.linkedin.com/in/mahnish-boodhram-93128a180/",
+  image_url: "https://xsgames.co/randomusers/assets/avatars/male/2.jpg",
+  type_of_developers: type_of_developers.sample
 }
 
 dev_3 = {
@@ -56,7 +62,9 @@ dev_3 = {
   bio: "Software engineer with a proven ability to adapt in both self-starting and collaborative environments while staying focused on achieving highquality results under strict deadlines. 
   This quality and results-based approach drove me to collaborate with the VP of sales at Squarespace to create a digital marketing campaign that tripled average signups in a single month. 
   Eager to obtain a challenging position at a prestigious company like Dream Version that will expand my learning and build upon my developer skills.",
-  linkedin_url: "https://www.linkedin.com/in/aftaabnv/"
+  linkedin_url: "https://www.linkedin.com/in/aftaabnv/",
+  image_url: "https://xsgames.co/randomusers/assets/avatars/male/3.jpg",
+  type_of_developers: type_of_developers.sample
 }
 
 dev_4 = {
@@ -72,7 +80,9 @@ dev_4 = {
   bio: "My name is Alex Drysdale and I am a Junior Web Developer for Oswald Technologies. 
   I am an accomplished coder and programmer, and I enjoy using my skills to contribute to the exciting technological advances that happen every day at Oswald Tech.
   I graduated from the California Institute of Technology in 2019 with a bachelor's degree in software development. While in school, I earned the 2015 Edmund Gains Award for my exemplary academic performance and leadership skills",
-  linkedin_url: "https://www.linkedin.com/in/evans-gb-13988963/"
+  linkedin_url: "https://www.linkedin.com/in/evans-gb-13988963/",
+  image_url: "https://xsgames.co/randomusers/assets/avatars/male/4.jpg",
+  type_of_developers: type_of_developers.sample
 }
 
 dev_5 = {
@@ -87,7 +97,9 @@ dev_5 = {
   education_level: "Degree",
   bio: "I'm familiar with a variety of programming languages, including ASP .Net, JavaScript, HTML, CSS, Python, and jQuery, 
   but I'm always adding new skills to my repertoire.",
-  linkedin_url: "https://www.linkedin.com/in/vikash-beersye-7b4221111/"
+  linkedin_url: "https://www.linkedin.com/in/vikash-beersye-7b4221111/",
+  image_url: "https://xsgames.co/randomusers/assets/avatars/male/5.jpg",
+  type_of_developers: type_of_developers.sample
 }
 
 dev_6 = {
@@ -104,7 +116,9 @@ dev_6 = {
   In a nutshell, I create websites that help organizations address business challenges and meet their needs. 
   I manage everything from website navigation and layout to a company's web hosting and security architecture. My expertise lies within front-end web apps, 
   and the main languages in my tech stack are JavaScript, React, and of course HTML/CSS. I’m a lifelong learner (currently taking a course on building AI chatbots with Python!) and love to read, run, and find new bubble tea shops in New York City.",
-  linkedin_url: "https://www.linkedin.com/in/vikash-beersye-7b4221111/"
+  linkedin_url: "https://www.linkedin.com/in/vikash-beersye-7b4221111/",
+  image_url: "https://xsgames.co/randomusers/assets/avatars/male/6.jpg",
+  type_of_developers: type_of_developers.sample
 }
 
 dev_7 = {
@@ -121,7 +135,9 @@ dev_7 = {
   In a nutshell, I create websites that help organizations address business challenges and meet their needs. 
   I manage everything from website navigation and layout to a company's web hosting and security architecture. My expertise lies within front-end web apps, 
   and the main languages in my tech stack are JavaScript, React, and of course HTML/CSS. I’m a lifelong learner (currently taking a course on building AI chatbots with Python!) and love to read, run, and find new bubble tea shops in New York City.",
-  linkedin_url: "http://linkedin.com/bipinramkh"
+  linkedin_url: "http://linkedin.com/bipinramkh",
+  image_url: "https://xsgames.co/randomusers/assets/avatars/male/7.jpg",
+  type_of_developers: type_of_developers.sample
 }
 
 recruiter_1 = {
@@ -133,7 +149,8 @@ recruiter_1 = {
   mobile_phone: "5745 8523",
   website_url: "https://sandbox.mu/web-design-mauritius/",
   bio: "We offer professional SEO services that help websites increase their organic search score drastically in order to compete for the highest rankings — even when it comes to highly competitive keywords.We use digital marketing to generate relevant traffic to websites.",
-  linkedin_url: "https://www.linkedin.com/company/sandbox-mauritius/"
+  linkedin_url: "https://www.linkedin.com/company/sandbox-mauritius/",
+  image_url: "https://cryptologos.cc/logos/the-sandbox-sand-logo.png"
 }
 
 recruiter_2 = {
@@ -147,7 +164,8 @@ recruiter_2 = {
   bio: "Since 2006, Ipedis (“Internet for PEople with DISabilities”) has been working around a vision: to make digital accessibility a standard, because it benefits everyone. 
   Our solutions meet the needs of large groups and the public sector in terms of e-accessible digital communication and RGAA and WCAG criteria. We also support private players and communication agencies who wish to integrate accessibility into their digitalization strategy. 
   Finally, we have developed a content digitization platform allowing agencies to meet their customer needs. ",
-  linkedin_url: "https://www.linkedin.com/company/ipedis"
+  linkedin_url: "https://www.linkedin.com/company/ipedis",
+  image_url: "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/8f1b423d6e107f63490d"
 }
 
 recruiter_3 = {
@@ -161,7 +179,8 @@ recruiter_3 = {
   bio: "The business management and training company headquartered in Bremen, Germany. 
   We are a success-driven firm that provides management advisory and contracting services customized to help companies from different industries with business management problems. 
   Brainnest runs, leads, and manages complex projects and initiatives",
-  linkedin_url: "https://www.linkedin.com/company/brainnestde/"
+  linkedin_url: "https://www.linkedin.com/company/brainnestde/",
+  image_url: "https://static.wixstatic.com/media/4fa9c2_0b28731f38304ed0989a8c0582f953a3~mv2.png/v1/fill/w_2500,h_2500,al_c/4fa9c2_0b28731f38304ed0989a8c0582f953a3~mv2.png"
 }
 
 [dev_1, dev_2, dev_3, dev_4, dev_5, dev_6, dev_7, recruiter_1, recruiter_2, recruiter_3].each do |user|
@@ -176,7 +195,9 @@ recruiter_3 = {
     experience_year: user[:experience_year],
     education_level: user[:education_level],
     bio: user[:bio],
-    linkedin_url: user[:linkedin_url]
+    linkedin_url: user[:linkedin_url],
+    image_url: user[:image_url],
+    type_of_developers: user[:type_of_developers]
   )
 end
 
