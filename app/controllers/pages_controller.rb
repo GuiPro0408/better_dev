@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :home ]
 
   def home
-    @developers = User.where(developer: true)
+    @developers = User.where(developer: true).limit(9)
     @jobs = Job.order(created_at: :desc).limit(6)
   end
 

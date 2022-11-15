@@ -35,10 +35,14 @@
   <div class="col-3">
     <h3>Info on Recruiter</h3>
     <div class="card mt-5">
-      <h3><%= @job.user.nickname %></h3>
-      <hr>
-      <h4>Bio</h4>
-      <h6><%= @job.user.bio %></h6>
+      <div class = "d-flex justify-content-between border-bottom align-items-center p-2">
+        <h2><%= @job.user.nickname %></h2>
+        <%= image_tag @job.user.image_url, width: "70px", class: "rounded-circle" %>
+      </div>
+      <div class = "px-2">
+        <h4>Bio</h4>
+        <h6><%= @job.user.bio %></h6>
+      </div>
     </div>
   </div>
 </div>

@@ -7,10 +7,10 @@
               <div class="row g-0">
                 <div class="col-md-4 gradient-custom text-center text-white py-3"
                   style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
-                  <img src="https://cdn-icons-png.flaticon.com/512/1177/1177568.png"
-                    alt="Avatar" class="img-fluid my-4" style="width: 90px;" />
+                  <img src="<%= developer.image_url %>"
+                    alt="Avatar" class="img-fluid my-4" style="width: 90px;border-radius: 50%;" />
                   <h5><%= developer.nickname %></h5>
-                  <p>Web Developer</p>
+                  <p><%= developer.type_of_developers %></p>
                   <%= link_to("Show", user_show_path(developer), class: 'btn btn-outline-primary btn-sm') %>
                 </div>
                 <div class="col-md-8">
