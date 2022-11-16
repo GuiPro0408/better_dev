@@ -35,7 +35,7 @@
               </div>
 
               <div class="media-icons">
-                <a href="<%= dev.linkedin_url %>"><i class="fa-brands fa-linkedin-in"></i></a> 
+                <a href="<%= dev.linkedin_url %>"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="<%= dev.website_url %>"><i class="fas fa-globe"></i></a>
               </div>
 
@@ -71,7 +71,7 @@
         <div class="col-md-5 d-flex flex-column justify-content-center gap-3">
           <h1 class = "fw-bold">About Us</h1>
           <p class = "fs-5">
-            Better Dev connects web developers with businesses, empowering anyone to find success wherever they are. We’re all about providing a conducive environment so that everyone can learn, thrive, and be the best version of themselves. 
+            Better Dev connects web developers with businesses, empowering anyone to find success wherever they are. We’re all about providing a conducive environment so that everyone can learn, thrive, and be the best version of themselves.
           </p>
         </div>
         <div class="col-md-7 d-flex justify-content-end">
@@ -108,7 +108,7 @@
 
       </div>
     </div>
-    
+
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
@@ -132,19 +132,36 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      slidesPerGroup: 3,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
+		const swiper = new Swiper('.swiper', {
+			// Default parameters
+			slidesPerView: 2,
+			spaceBetween: 10,
+			loop: true,
+			pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
-      navigation: {
+			navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-    });
+			// Responsive breakpoints
+			breakpoints: {
+				// when window width is >= 320px
+				320: {
+					slidesPerView: 2,
+					spaceBetween: 20
+				},
+				// when window width is >= 480px
+				480: {
+					slidesPerView: 3,
+					spaceBetween: 30
+				},
+				// when window width is >= 640px
+				640: {
+					slidesPerView: 3,
+					spaceBetween: 10
+				}
+			}
+		});
   </script>
