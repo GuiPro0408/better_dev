@@ -23,3 +23,30 @@ $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
 // Override other variables below!
+// Common classes
+.flex-center {
+	display: flex;
+	justify-content: center;
+	flex-direction: row !important;
+}
+.flex-center-column {
+	display: flex;
+	justify-content: center;
+	flex-direction: column !important;
+}
+.flex-right {
+	display: flex;
+	justify-content: end;
+	flex-direction: row !important;
+}
+.flex-left {
+	display: flex;
+	justify-content: start;
+	flex-direction: row !important;
+}
+.margTop2 {
+	margin-top: 2rem;
+}
+body {
+	background: white;
+}

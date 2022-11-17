@@ -1,27 +1,37 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "logo.png" %>
+	<div class="col-md-3 menu sliding-name">
+	<div class="image">
+		<%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag "logo.png", size: "70x43" %>
     <% end %>
+		<div class="text">
+				<p><b>digital</b> books</p>
+			</div>
+	</div>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+	</div>
+
+	<div class="col-md-9 flex-right">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
-          <li class="nav-item active">
-            <%= link_to "Home", root_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "List of Developers", users_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "List of jobs", jobs_path, class: "nav-link" %>
-          </li>
+          <li class="nav-item <%= addclass('/') %>">
+      			<%= link_to 'Home', root_path, class: "nav-link hover-animation" %>
+    			</li>
+					<li class="nav-item <%= addclass('/users') %>">
+      			<%= link_to 'Developers', users_path, class: "nav-link hover-animation" %>
+    			</li>
+					<li class="nav-item <%= addclass('/jobs') %>">
+      			<%= link_to 'Jobs', jobs_path, class: "nav-link hover-animation" %>
+    			</li>
           <li class="nav-item dropdown">
-            <%= image_tag current_user.image_url, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <%# <%=  image_tag current_user.image_url,class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "My Profile", user_show_path(current_user), class: "dropdown-item" %>
               <%= link_to "Edit Profile", edit_user_registration_path, class: "dropdown-item" %>
@@ -35,5 +45,8 @@
         <% end %>
       </ul>
     </div>
+	</div>
+
+
   </div>
 </div>

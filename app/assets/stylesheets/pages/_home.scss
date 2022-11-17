@@ -170,19 +170,6 @@
   background: #7d2ae8;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  opacity: 0.7;
-  color: #7d2ae8;
-  transition: all 0.3s ease;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  opacity: 1;
-  color: #7d2ae8;
-}
-
 // ABOUT US
 
 #about-us {
@@ -192,4 +179,9 @@
 
 .card-job {
   border-radius: 20px;
+}
+
+// footer
+.container-fluid.background-purple {
+	background: #270c4a;
 }
