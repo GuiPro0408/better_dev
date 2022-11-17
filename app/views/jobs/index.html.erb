@@ -1,3 +1,15 @@
+<div class="container mt-5">
+  <%= form_with url: jobs_path, method: :get, class: "d-flex" do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "form-control",
+      placeholder: "Find a job"
+    %>
+    <%= submit_tag "Search", class: "btn btn-primary" %>
+  <% end %>
+</div>
+
+
 <% if current_user.developer == false %>
   <%= link_to("Create A job", new_job_path,  class: 'btn btn-primary my-3') %>
 <% end %>
