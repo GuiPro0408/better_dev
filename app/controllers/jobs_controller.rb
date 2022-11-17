@@ -2,7 +2,16 @@ class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy, :applied]
 
   def index
-    @jobs = Job.includes(:user)
+    if params[:query].present?
+      sql_query = <<~SQL
+        jobs.title @@ :query
+        OR jobs.description @@ :query
+        OR jobs.locations @@ :query
+      SQL
+      @jobs = Job.includes(:user).where(sql_query, query: "%#{params[:query]}%")
+    else
+      @jobs = Job.includes(:user)
+    end
   end
 
   def show
