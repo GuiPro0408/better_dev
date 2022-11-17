@@ -8,12 +8,21 @@
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "nickname" }%>
+    <%= f.input :image_url,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "image_url" }%>
     <%= f.input :developer,
                 label: 'I am a',
                 as: :select, collection: [['Developer',true], ['Recruiter',false]],
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "developer" }%>
+    <%= f.input :type_of_developers,
+                required: true,
+                autofocus: true,
+                collection: ["Software developer", "Fullstack developer", "Back-end developer", "Front-end developer", "Mobile developers", "Webmaster"],
+                input_html: { autocomplete: "type_of_developers" }%>
     <%= f.input :address,
                 required: true,
                 autofocus: true,
@@ -74,3 +83,4 @@
 </div>
 
 <%= link_to "Back", :back %>
+
