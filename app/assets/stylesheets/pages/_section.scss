@@ -1,0 +1,116 @@
+/* Added codes */
+.container-custom {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0fr 1fr 1fr 0fr;
+  grid-template-areas: ". para image .";
+  background-color: white;
+	padding: 5% 6%;
+  .section-image {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    align-self: center;
+    position: relative;
+    img {
+      height: 450px;
+      width: 350px;
+      padding: 1rem;
+      z-index: 1;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      border: 1px solid black;
+      width: 19rem;
+      height: 26rem;
+      right: 43%;
+      z-index: 0;
+      bottom: 19%;
+    }
+  }
+  .section-paragraph {
+    grid-area: para;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 3rem;
+    .blockquote {
+      font-family: $primaryFont;
+      position: relative;
+			border: 1px solid #8a8a8a;
+			padding: 1rem 0.6rem;
+      &:before {
+        content: "";
+				position: absolute;
+				left: -0.5rem;
+				top: -0.5rem;
+				width: 100%;
+				height: 100%;
+				border: 1px solid #7d2ae8;
+				z-index: 0;
+      }
+
+    }
+    .paragraph {
+      position: relative;
+      h2 {
+        font-size: 2.6rem;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          background-color: #000000;
+          height: 8rem;
+          width: 10rem;
+          opacity: 0.1;
+          top: -10%;
+          left: -5%;
+        }
+        i {
+          color: #000000;
+          font-family: $secondaryFont;
+          font-weight: 500;
+          font-style: normal;
+        }
+        b {
+          color: #ecb715;
+          font-family: $primaryFont;
+          font-family: 800;
+        }
+        abbr {
+          font-family: $primaryFont;
+          font-weight: bolder;
+          color: #000000;
+        }
+      }
+      p {
+        font-family: $secondaryFont;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+    }
+    .container-graphic {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        padding-right: 1rem;
+        width: 4rem;
+        height: 1.5rem;
+        display: flex;
+        align-self: center;
+        transition: 0.2s ease-in-out;
+        &:hover {
+          padding-right: 2rem;
+          transition: 0.2s ease-in-out;
+        }
+      }
+      h4 {
+        font-weight: 600;
+        font-family: $primaryFont;
+      }
+    }
+  }
+}
