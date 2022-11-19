@@ -1,30 +1,43 @@
-<div class="container mt-5">
-  <%= form_with url: jobs_path, method: :get, class: "d-flex" do %>
-    <%= text_field_tag :query,
-      params[:query],
-      class: "form-control",
-      placeholder: "Find a job"
-    %>
-    <%= submit_tag "Search", class: "btn btn-primary" %>
-  <% end %>
+<div class="container margTop2">
+	<div class="row ">
+		<div class="col-md-12 d-flex justify-content-center">
+			<h1 class="design-heading">Hire the best <span class="highlight highlight-underline" style="background-color:#ff7eff;"><span class="highlight-word">talents<span class="highlight-border" style="background-color:#ff7eff;"></span></span></h1>
+		</div>
+	</div>
+	<div class="row margTop2">
+		<div class="col-md-12 margBott2 ">
+		<%= form_with url: jobs_path, method: :get, class: "d-flex search-form-control form-group" do %>
+				<%= text_field_tag :query,
+					params[:query],
+					class: "form-control string required",
+					placeholder: "Find a job"
+				%>
+				<%# <%= submit_tag "Search", class: "btn btn-primary" %>
+				<button name="button" type="submit" class="btn btn-flat">
+      <i class="fas fa-search"></i> Search
+    </button>
+			<% end %>
+		</div>
+	</div>
+	<div class="row">
+		<% if current_user.developer == false %>
+			<%= link_to("Create A job", new_job_path,  class: 'btn btn-primary my-3') %>
+		<% end %>
+
+		<% @jobs.each do |job| %>
+			<div class="col-md-5 card p-3 margBott2 marg-neg" >
+				<p class="type d-flex"><%= job.employment_type%></p>
+				<p><%= job.title %></p>
+				<p><%= job.description %></p>
+				<p><%= job.expiry_date %></p>
+				<p>By <%= job.user.nickname %></p>
+
+				<%= link_to("Read More", job_path(job), class: 'btn-highlight d-flex text-black') %>
+				<% if job.user == current_user %>
+					<%= link_to("Edit", edit_job_path(job), class: 'btn btn-info') %>
+				<% end %>
+			</div>
+		<% end %>
+
+	</div>
 </div>
-
-
-<% if current_user.developer == false %>
-  <%= link_to("Create A job", new_job_path,  class: 'btn btn-primary my-3') %>
-<% end %>
-
-<% @jobs.each do |job| %>
-  <div class="card p-3">
-    <p><%= job.title %></p>
-    <p><%= job.description %></p>
-    <p><%= job.employment_type %></p>
-    <p><%= job.expiry_date %></p>
-    <p>By <%= job.user.nickname %></p>
-
-    <%= link_to("Read More", job_path(job), class: 'btn btn-primary') %>
-    <% if job.user == current_user %>
-      <%= link_to("Edit", edit_job_path(job), class: 'btn btn-info') %>
-    <% end %>
-  </div>
-<% end %>
