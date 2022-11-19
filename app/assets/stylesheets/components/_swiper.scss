@@ -1,15 +1,23 @@
-.swiper-button-next:after, .swiper-button-prev:after {
-	font-size: 1rem;
-}
 .swiper-button-next, .swiper-button-prev {
-		color: white;
-    border: 1px solid;
-    padding: 0.8rem 1rem;
-    background: #7d2ae8;
-    transition: all 0.3s ease;
+	color: white;
+	border: 1px solid black !important;
+	padding: 0.2rem 0.5rem;
+	background: #270c4a;
+	height: 30px;
+	width: 30px;
+	transition: $transitionTimingFast;
+	&:hover {
+		background: #fff;
+		color: #000000;
+	}
+	&:after, &:before {
+		font-size: 1rem;
+	}
 }
+
 .card-dev {
 	min-height: 315px !important;
+	border-radius: 0px;
 }
 .profession {
 	min-height: 30px;
@@ -100,4 +108,179 @@
   100% {
     transform: translate(85px, 0%);
   }
+}
+.swiper-slide.p-3.shadow.card-job.swiper-slide-next {
+	transform: translateY(-6%);
+	background: asset_url("source.png"), #270c4a;
+	transition: $transitionTimingFast;
+	.text-white {
+		color: white !important;
+	}
+	&:hover {
+		transform: translateY(-8%);
+		transition: $transitionTimingFast;
+	}
+}
+.swiper-slide.p-3.shadow.card-job.swiper-slide-active, .swiper-slide.p-3.shadow.card-job {
+	transform: translateY(-0%);
+	transition: $transitionTimingFast;
+	.text-white {
+		color: #000000 !important;
+	}
+	&:hover {
+		transform: translateY(-6%);
+		transition: $transitionTimingFast;
+	}
+}
+.heading{
+	text-transform: uppercase;
+}
+
+
+// SWIPER CODE FROM ANOTHER DEV (GUILLAUME)
+#dev-section {
+  position: relative;
+  height: 450px;
+  width: 1075px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper {
+  width: 950px;
+}
+
+.card-dev {
+  position: relative;
+  background: #fff;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+	.card-dev::before {
+    content: "";
+    position: absolute;
+    height: 40%;
+    border-radius: 0% 0% 89% 1%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #270c4a;
+    transform: rotate(0deg);
+		transition: $transitionTimingFast;
+		&:hover {
+			height: 60%;
+			border-radius: 0% 0% 89% 1%;
+			transition: $transitionTimingFast;
+		}
+}
+
+
+.card-dev .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+
+#dev-section .card-dev .image {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #7d2ae8;
+}
+
+#dev-section .card-dev .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card-dev .media-icons {
+  	position: absolute;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 5%;
+}
+
+.card-dev .media-icons i {
+  color: #fff;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card-dev .media-icons i:hover {
+  opacity: 1;
+}
+
+.card-dev .name-profession {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.name-profession .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.name-profession .profession {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card-dev .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.card-dev .rating i {
+  font-size: 18px;
+  margin: 0 2px;
+  color: #7d2ae8;
+}
+
+.card-dev .button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.aboutMe {
+  background: #7d2ae8;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.aboutMe:hover {
+  background: #6616d0;
+  color: white;
+}
+
+.swiper-pagination {
+  position: absolute;
+}
+
+.swiper-pagination-bullet {
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #7d2ae8;
 }

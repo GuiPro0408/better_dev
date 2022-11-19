@@ -148,6 +148,7 @@ GEM
     nokogiri (1.13.9-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    particles-js-rails (2.0.0)
     pg (1.4.4)
     public_suffix (5.0.0)
     puma (5.6.5)
@@ -220,6 +221,9 @@ GEM
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
+    turbolinks (5.2.1)
+      turbolinks-source (~> 5.2)
+    turbolinks-source (5.2.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     warden (1.2.9)
@@ -254,6 +258,7 @@ DEPENDENCIES
   font-awesome-sass (~> 6.1)
   jbuilder
   jsbundling-rails
+  particles-js-rails
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4)
@@ -263,6 +268,7 @@ DEPENDENCIES
   sprockets-rails
   stimulus-rails
   turbo-rails
+  turbolinks (~> 5.2.0)
   tzinfo-data
   web-console
   webdrivers

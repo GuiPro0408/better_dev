@@ -1,0 +1,11 @@
+.background-purple {
+	background: #270c4a;
+}
+.hover-effect {
+	transform: translateY(0px);
+	transition: $transitionTimingFast;
+	&:hover {
+		transform: translateY(-3px);
+		transition: $transitionTimingFast;
+	}
+}

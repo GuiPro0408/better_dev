@@ -1,29 +1,145 @@
-<div class="banner" style="background-color: #21201E;">
+<!-- particles.js container --> <div id="particles-js" style="background: #13002c !important;"></div>
+ <!-- stats - count particles --> <div class="count-particles">
+ <span class="js-count-particles">--</span> particles </div>
+ <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+ <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<div
+>
+</div>
+<div class="banner" id="particles-image"
+  style="height: 100vh; background-color: #21201E;"
+  data-controller="particles"
+  data-particles-config="<%= {
+  "particls": {
+    "number": {
+      "value": 1000,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 10,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 80,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 300,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 2
+    },
+    "move": {
+      "enable": true,
+      "speed": 12,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 800,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 800,
+        "size": 80,
+        "duration": 2,
+        "opacity": 0.8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 400,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}.to_json %>">
 	<div class="container d-flex">
 		<div class="container d-flex flex-column justify-content-center gap-3">
-			<h1 class="title">
-				<b>Better </b>
-				Dev
-				<br>
-				<span data-controller="typed-js" class = "fs-3"></span>
+			<h1 class="title upper-layer">Better Dev
 			</h1>
-			<p>
+			<%# <p><span data-controller="typed-js" class = "fs-3"></span></p> %>
+			<p class="text-cursive">
 				How work should work
 			</p>
 			<div>
 				<a class="btn-banner" href="<%= jobs_path %>"><i class="fa-solid fa-arrow-right-long me-2"></i>Discover Jobs</a>
 			</div>
 		</div>
-		<div class="container d-flex justify-content-end">
+		<div class="container d-flex justify-content-center upper-layer">
 			<%= image_tag("illustration_1.svg", width: "450px") %>
 		</div>
 	</div>
 </div>
 
-<div class="container">
+<div class="container-fluid background-pattern">
 	<div class="row">
 		<div class="col-md-12">
-		<h1 class = "text-center my-5 fw-bold">SOME OF OUR TALENTS</h1>
 			<section id = "dev-section" class = "mx-auto mb-5">
 				<div class="swiper mySwiper container">
 					<div class="swiper-wrapper content">
@@ -38,8 +154,8 @@
 									<% end %>
 								</div>
 								<div class="media-icons">
-									<a href="<%= dev.linkedin_url %>"><i class="fa-brands fa-linkedin-in"></i></a>
-									<a href="<%= dev.website_url %>"><i class="fas fa-globe"></i></a>
+									<a href="<%= dev.linkedin_url %>" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+									<a href="<%= dev.website_url %>" target="_blank"><i class="fas fa-globe"></i></a>
 								</div>
 
 								<% if dev.developer == true && dev.type_of_developers.present? %>
@@ -60,8 +176,8 @@
 						<% end %>
 					</div>
 				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next first"></div>
+				<div class="swiper-button-prev first"></div>
 				<div class="swiper-pagination"></div>
 			</section>
 		</div>
@@ -98,46 +214,67 @@
 </div>
 
 
-
-
-
-<div class="container-fluid p-5" id = "about-us">
-	<div class="container">
-
-		<div class="row">
-			<div class="col-12 heading">
-				<h1 class="text-center mb-5">WELCOME</h1>
-			</div>
+<div class="container-fluid background-light">
+	<div class="row margBott2 margTop2">
+	<div class="col-md-12 margBott2">
+		<h1 class="text-montserrat text-center text-gras">We have many years of experience in <br>
+		<b class="purple-text">organizing events</b></h1>
+	</div>
+	<div class="row margTop3">
+		<div class="col-md-4 text-center">
+			<div class="purple-text text-gras"
+				data-controller="animated-number"
+				data-animated-number-start-value="0"
+				data-animated-number-end-value="2000"
+				data-animated-number-duration-value="3000"
+			>
+  		0
 		</div>
-		<div class="row gx-5">
-			<div class="col-md-5 d-flex flex-column justify-content-center gap-3">
-				<h1 class = "fw-bold">About Us</h1>
-				<p class = "fs-5">
-					Better Dev connects web developers with businesses, empowering anyone to find success wherever they are. We’re all about providing a conducive environment so that everyone can learn, thrive, and be the best version of themselves.
-				</p>
-			</div>
-			<div class="col-md-7 d-flex justify-content-end">
-				<%= image_tag("illustration_2.svg", width: "500px") %>
-			</div>
+		<p class="custom-text text-center purple-text">Hires</p>
 		</div>
+		<div class="col-md-4 text-center ">
+			<div class="purple-text text-gras"
+				data-controller="animated-number"
+				data-animated-number-start-value="0"
+				data-animated-number-end-value="1000"
+				data-animated-number-duration-value="3000"
+			>
+  		0 +
+		</div>
+		<p class="custom-text text-center purple-text">Jobs</p>
+		</div>
+		<div class="col-md-4 text-center">
+			<div class="purple-text text-gras"
+				data-controller="animated-number"
+				data-animated-number-start-value="0"
+				data-animated-number-end-value="25"
+				data-animated-number-duration-value="3000"
+			>
+  		0
+		</div>
+		<p class="custom-text text-center purple-text">Experience</p>
+		</div>
+
+	</div>
+
 	</div>
 </div>
 <h1 class = "text-center my-5 fw-bold">RECENT JOBS </h1>
 <section id = "dev-section" class = "mx-auto mb-5">
-	<div class="swiper mySwiper1 container">
+	<div class="swiper swiper1 mySwiper1 container">
 		<div class="swiper-wrapper content py-5">
 			<% @jobs.each do |job| %>
 			<div class="swiper-slide p-3 shadow card-job">
 				<div class="card-content">
 					<div class="card-title mb-4">
-						<p class="heading">
+						<p class="heading text-white">
 							<%= job.title %>
 						</p>
 					</div>
-					<p class="text-muted">
+					<p class="text-white">
 						<%= truncate job.description, length: 100 %>
 					</p>
-					<p class="text-muted mt-4">
+					<p class="text-white mt-4">
 						<%= image_tag job.user.image_url, width: "30px", class: "rounded-circle" %>
 						<%= job.user.nickname %>
 					</p>
@@ -149,8 +286,8 @@
 			<% end %>
 		</div>
 	</div>
-	<div class="swiper-button-next"></div>
-	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next second"></div>
+	<div class="swiper-button-prev second"></div>
 	<div class="swiper-pagination"></div>
 </section>
 <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
@@ -159,15 +296,18 @@
              </use></g> <g class="wave2"> <use xlink:href="#wave-path" x="50" y="0" >
                   </use></g> <g class="wave3"> <use xlink:href="#wave-path" x="50" y="9" > </use></g> </svg>
 <div class="container-fluid background-purple">
-	<div class="container">
-		<footer class="text-white">
-			<div class="d-flex align-items-center justify-content-between">
-				<%= link_to root_path, class: "navbar-brand" do %>
-				<%= image_tag "logo.png", width: '100px'%>
-				<% end %>
-				<span class="mb-3 mb-md-0">© 2022 Better Dev</span>
-			</div>
-		</footer>
+	<div class="row">
+		<div class="col-md-12 text-center flex-center flex-direction-column">
+			<p class="margBott2 margTop2 text-white">© 2022 BetterDev | All Rights Reserved | Powered by TeamBetterDev <i class="fa-solid fa-heart"></i></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 text-center flex-center">
+			<p class="text-center flex-direction-row text-white ">
+			<a href="/"><i class="hover-effect text-white  fa-solid fa-house"></i></a>	&nbsp; <a href="https://www.github.com" target="_blank"><i class="hover-effect text-white fa-brands fa-github"></i></a> &nbsp;<a href="https://www.facebook.com" target="_blank"><i class="hover-effect text-white fa-brands fa-facebook"></i></a> &nbsp;
+				 <a href="https://www.instagram.com"><i class="hover-effect text-white fa-brands fa-instagram"></i> </a>
+			</p>
+		</div>
 	</div>
 </div>
 <!-- Swiper JS -->
@@ -206,4 +346,9 @@ var swiper = new Swiper(".mySwiper1", {
       },
     });
 
+			</script>
+
+<script src="https://cdn.jsdelivr.net/npm/particlesjs@2.2.3/dist/particles.min.js"></script>
+<script>
+particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
 </script>
