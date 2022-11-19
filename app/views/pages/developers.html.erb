@@ -1,19 +1,19 @@
-  <section class="vh-100" style="background-color: #f4f5f7;">
+  <section class="background-list-dev">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-evenly">
         <% @developers.each do |developer| %>
           <div class="col col-lg-6 mb-4 mb-lg-0">
-            <div class="card mb-3" style="border-radius: .5rem;">
+            <div class="card mb-3 border-0 list-dev-card" style="border-radius: .5rem;">
               <div class="row g-0">
                 <div class="col-md-4 gradient-custom text-center text-white py-3"
                   style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
                   <% if developer.image_url.present? %>
-                    <img src="<%= developer.image_url %>" alt="Avatar" class="img-fluid my-4" style="width: 90px;border-radius: 50%;" />
+                    <img src="<%= developer.image_url %>" alt="Avatar" class="img-fluid mt-2 mb-4 border border-2" style="width: 90px;border-radius: 50%;" />
                   <% else %>
                     <img src="https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png" alt="Avatar" class="img-fluid my-4" style="width: 90px;border-radius: 50%;" />
                   <% end %>
                   
-                  <h5><%= developer.nickname %></h5>
+                  <h5 class = "fw-bold"><%= developer.nickname %></h5>
 
                   <% if developer.developer == true && developer.type_of_developers.present? %>
                     <% type_of_developers = developer.type_of_developers %>
@@ -21,30 +21,30 @@
                     <% type_of_developers = "Web Developer" %>
                   <% end %>
 
-                  <p><%= type_of_developers %></p>
-                  <%= link_to("Show", user_show_path(developer), class: 'btn btn-outline-primary btn-sm') %>
+                  <p class = "mb-4"><%= type_of_developers %></p>
+                  <%= link_to('<i class="fa-solid fa-arrow-right"></i>'.html_safe, user_show_path(developer), class: 'show-link') %>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body p-4">
-                    <h6>Information</h6>
+                    <h5 class = "fw-bold">Information</h5>
                     <hr class="mt-0 mb-4">
                     <div class="row pt-1">
                       <div class="col-6 mb-3">
-                        <h6>Email</h6>
+                        <h6 class = "fw-bold">Email</h6>
                         <p class="text-muted"><%= developer.email %></p>
                       </div>
                       <div class="col-6 mb-3">
-                        <h6>Phone</h6>
+                        <h6 class = "fw-bold">Phone</h6>
                         <p class="text-muted"><%= developer.mobile_phone %></p>
                       </div>
                     </div>
                     <div class="row pt-1">
                       <div class="col-6 mb-3">
-                        <h6>Experiences Year</h6>
+                        <h6 class = "fw-bold">Experiences Year</h6>
                         <p class="text-muted"><%= developer.experience_year %></p>
                       </div>
                       <div class="col-6 mb-3">
-                        <h6>Education Level</h6>
+                        <h6 class = "fw-bold">Education Level</h6>
                         <p class="text-muted"><%= developer.education_level %></p>
                       </div>
                     </div>
