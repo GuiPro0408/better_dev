@@ -1,0 +1,35 @@
+#scrollTop {
+  background-color: rgb(94, 15, 94);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	i {
+		text-decoration: none;
+		color: white;
+
+	}
+}
+#scrollTop:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#scrollTop:active {
+  background-color: #555;
+}
+#scrollTop.show {
+  opacity: 1;
+  visibility: visible;
+}

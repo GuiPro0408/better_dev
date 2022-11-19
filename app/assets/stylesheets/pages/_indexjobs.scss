@@ -1,0 +1,97 @@
+.design-heading {
+	font-family: $primaryFont;
+	font-weight: 700;
+	color: #252525;
+	.highlight.highlight-underline {
+		position: relative;
+		padding: 0;
+		border-radius: unset;
+		background-color: unset !important;
+		background-image: unset;
+		.highlight-word {
+			position: relative;
+			z-index: 1;
+			.highlight-border {
+				background-color: #ff7eff;
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 10%;
+				width: calc(100% + 0.3em);
+				height: 25%;
+				margin-left: -0.15em;
+				transform: skew(-12deg) translateX(0);
+				background: #ff7eff;
+				z-index: -1;
+			}
+		}
+	}
+}
+.search-form-control {
+  position: relative;
+	.btn {
+		position: absolute;
+		top: 8px;
+		bottom: 8px;
+		right: 8px;
+	}
+	.form-control {
+		height: 3.5rem;
+		box-shadow: 0 2px 6px #670bff66;
+		border: 1px solid #670bff;
+		&:focus {
+			border: 1px solid #670bff66;
+			outline: none !important;
+			box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+		}
+	}
+}
+.marg-neg {
+	margin-left: 2rem !important;
+}
+
+
+.col-md-5.card.p-3.margBott2.marg-neg:before {
+	content: '';
+	position: absolute;
+	background: #46267c1a;
+	height: 57%;
+	border-radius: 100% 26% 0% 0%;
+	width: 67%;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+}
+.col-md-5.card.p-3.margBott2.marg-neg {
+		position: relative;
+    color: black;
+    box-shadow: #f1f1f1 -3px 7px 20px 3px;
+    border: none;
+		&:before {
+			content: '';
+			position: absolute;
+			background: #46267c1a;
+			height: 57%;
+			border-radius: 100% 26% 0% 0%;
+			width: 67%;
+			right: 0;
+			bottom: 0;
+			z-index: 0;
+			transition: $transitionTimingFast;
+		}
+		&:hover {
+			&:before {
+				content: '';
+			position: absolute;
+			background: #46267c1a;
+			height: 57%;
+			border-radius: 100% 26% 0% 0%;
+			width: 50%;
+			right: 0;
+			bottom: 0;
+			z-index: 0;
+			transition: $transitionTimingFast;
+			}
+
+		}
+}

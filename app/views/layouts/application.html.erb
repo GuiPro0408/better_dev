@@ -12,8 +12,11 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body><%= render "shared/navbar" %>
+  <body id="#body"><%= render "shared/navbar" %>
 <%= render "shared/flashes" %>
+
+<a href="#body" id="scrollTop" data-controller="scroll-to"><i class="fa-solid fa-arrow-up"></i></a>
+
 
     <%= yield %>
   </body>
