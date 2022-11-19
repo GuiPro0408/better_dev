@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import AnimatedNumberController from "./animated_number_controller"
+application.register("animated-number", AnimatedNumberController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
