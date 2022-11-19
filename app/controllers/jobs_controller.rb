@@ -10,7 +10,7 @@ class JobsController < ApplicationController
       SQL
       @jobs = Job.includes(:user).where(sql_query, query: "%#{params[:query]}%")
     else
-      @jobs = Job.includes(:user)
+      @jobs = Job.includes(:user).all
     end
   end
 

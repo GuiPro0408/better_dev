@@ -634,7 +634,7 @@ job_11 = {
   description: "We are looking for a Front-End Developer for a well known company based in Mauritius. We are 60 employees thriving to innovate, develop and maintain the Company’s software solutions.
   More specifically, we work closely with various Marketing & Services subsidiaries to develop Mobility oriented solutions, a fast growing & transforming sector.",
   locations: "1 Cybercity, Ebene, Mauritius",
-  employment_type: "Free-Lance",
+  employment_type: "Freelance",
   expiry_date: Date.new(2023, 12, 11),
   user: User.find_by(nickname: "Cybernaptics Ltd")
 }
@@ -653,7 +653,7 @@ job_13 = {
   title: "DEVELOPER FRONT END",
   description: "WSHOP est une Plateforme SaaS de Commerce Digitale Unifiée, qui regroupe tous les outils indispensables pour déployer l'eCommerce et la Transformation Digitale des points de vente physique de nos clients.",
   locations: "Lighthouse, Vivéa Business Park, St Pierre, Moka, Mauritius",
-  employment_type: "Permanent",
+  employment_type: "Full-time",
   expiry_date: Date.new(2023, 12, 15),
   user: User.find_by(nickname: "SDWorx")
 }
@@ -662,7 +662,7 @@ job_14 = {
   title: "JAVA DEVELOPERS",
   description: "A talented and passionate backend developer to work on Maureva-owned application. You'll work with our team of developers to build, improve and maintain our applications built using web technologies and cloud technologies.",
   locations: "3rd Floor , Orange Tower Ebène, Réduit, Mauritius",
-  employment_type: "part-time",
+  employment_type: "Part-time",
   expiry_date: Date.new(2023, 12, 17),
   user: User.find_by(nickname: "AWS")
 }
@@ -671,7 +671,7 @@ job_15 = {
   title: "FRONTEND ENGINEER (ANGULAR)",
   description: "ELCA is one of the biggest independent Swiss IT company. We are currently hiring in Mauritius as our vision is to build up a center with over 200 talents. Be part of a team that makes a difference to people’s lives by creating leading-edge software.",
   locations: "2nd Floor, Vivea Business Park,, St-Pierre, Moka, Mauritius",
-  employment_type: "full-time",
+  employment_type: "Full-time",
   expiry_date: Date.new(2023, 12, 18),
   user: User.find_by(nickname: "SANDBOX")
 }
@@ -680,7 +680,7 @@ job_16 = {
   title: "SOFTWARE DEVELOPER",
   description: "Roles and Responsibilities:Design, develop and deploy software applications,Analyse the needs of users and provide assistance/training in IT Solutions bring innovative ideas to improve existing software.",
   locations: "Rue de la Democratie, Ebene Junction, Ground Floor, Suite 011, Ebene, Mauritius",
-  employment_type: "part-time",
+  employment_type: "Part-time",
   expiry_date: Date.new(2023, 12, 19),
   user: User.find_by(nickname: "Succexa Ltd")
 }
@@ -691,7 +691,7 @@ job_17 = {
   23 000 clients, 600 employés, 40M€ CA, Linkeo se démarque par une croissance constante depuis 2000, en France et à l'international : filiales au Canada, Australie, USA, Emirats Arabes Unis et présent à l'Ile Maurice depuis 2007.
   Reconnu par les professionnels du secteur, nous avons été National Champions en 2012 et le sommes à nouveau en 2016 dans le cadre du prestigieux European Business Awards.",
   locations: "4ème étage, batiment Columbia Court, Angle avenue Draper & Route St Jean, Quatre Bornes, Mauritius",
-  employment_type: "full-time",
+  employment_type: "Full-time",
   expiry_date: Date.new(2023, 12, 20),
   user: User.find_by(nickname: "IPEDIS")
 }
@@ -700,7 +700,7 @@ job_18 = {
   title: "POWER PLATFORM DEVELOPER",
   description: "SD Worx is a leading European provider of Payroll & HR services with global reach. SD Worx’s +4000 employees operate in countries all over Europe and in Mauritius",
   locations: "Rue du Savoir, 11th Floor NEX Tower Cybercity,72201, Ebene, Mauritius, Cybercity, Mauritius",
-  employment_type: "part-time",
+  employment_type: "Part-time",
   expiry_date: Date.new(2023, 12, 21),
   user: User.find_by(nickname: "Accenture")
 }
@@ -709,7 +709,7 @@ job_19 = {
   title: "QA-SOFTWARE TEST ANALYST",
   description: "Astek Mauritius supports, locally and internationally, key accounts in their innovation and R&D strategy. Do you have significant experience as a Tester?",
   locations: "Tower A, Level 12, 1 Cybercity, Ebene,Réduit, Mauritius",
-  employment_type: "full-time",
+  employment_type: "Full-time",
   expiry_date: Date.new(2023, 12, 23),
   user: User.find_by(nickname: "TOTAL ENERGIES MOBILITY SERVICES INTERNATIONAL LTD (TEMSI)")
 }
@@ -718,7 +718,7 @@ job_20 = {
   title: "CONTROLEUR QUALITE WEB",
   description: "WSHOP est une Plateforme SaaS de Commerce Digitale Unifiée, qui regroupe tous les outils indispensables pour déployer l'eCommerce et la Transformation Digitale des points de vente physique de nos clients.",
   locations: "Lighthouse, Vivéa Business Park, St Pierre,, Moka, Mauritius",
-  employment_type: "part-time",
+  employment_type: "Part-time",
   expiry_date: Date.new(2023, 12, 24),
   user: User.find_by(nickname: "IPEDIS")
 }
@@ -727,7 +727,7 @@ job_21 = {
   title: "WEB DESIGNER & INTÉGRATEUR WEB",
   description: "Groupe Hisi est un fournisseur de solutions Clouds et de services d’infogérance sur mesure en France. Nous accompagnons les entreprises dans leur transformation numérique tout en sécurisant leurs environement critiques..",
   locations: "Route Royale, Pointe aux canonniers, Mauritius",
-  employment_type: "full-time",
+  employment_type: "Full-time",
   expiry_date: Date.new(2023, 12, 24),
   user: User.find_by(nickname: "Brainnest")
 }
@@ -736,7 +736,7 @@ job_22 = {
   title: "WEB DESIGNER",
   description: "Groupe Hisi est un fournisseur de solutions Clouds et de services d’infogérance sur mesure en France. Nous accompagnons les entreprises dans leur transformation numérique tout en sécurisant leurs environement critiques..",
   locations: "Route Royale, Pointe aux canonniers, Mauritius",
-  employment_type: "full-time",
+  employment_type: "Full-time",
   expiry_date: Date.new(2023, 12, 24),
   user: User.find_by(nickname: "Cybernaptics Ltd")
 }

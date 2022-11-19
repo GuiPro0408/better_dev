@@ -14,8 +14,8 @@
 				%>
 				<%# <%= submit_tag "Search", class: "btn btn-primary" %>
 				<button name="button" type="submit" class="btn btn-flat">
-      <i class="fas fa-search"></i> Search
-    </button>
+					<i class="fas fa-search"></i> Search
+				</button>
 			<% end %>
 		</div>
 	</div>
@@ -28,7 +28,7 @@
 			<div class="col-md-5 card p-3 margBott2 marg-neg" >
 				<p class="type d-flex"><%= job.employment_type%></p>
 				<p><%= job.title %></p>
-				<p><%= job.description %></p>
+				<p><%= truncate job.description, length: 200 %></p>
 				<p><%= job.expiry_date %></p>
 				<p>By <%= job.user.nickname %></p>
 
