@@ -26,9 +26,9 @@
 
 		<% @jobs.each do |job| %>
 			<div class="col-md-5 card p-3 margBott2 marg-neg" >
+				<p class="type d-flex"><%= job.employment_type%></p>
 				<p><%= job.title %></p>
 				<p><%= job.description %></p>
-				<p><%= job.employment_type %></p>
 				<p><%= job.expiry_date %></p>
 				<p>By <%= job.user.nickname %></p>
 
