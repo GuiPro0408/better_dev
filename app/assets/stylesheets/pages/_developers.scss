@@ -3,8 +3,38 @@
   background: #f6d365;
 
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+  background: -webkit-linear-gradient(to right bottom, rgba(82, 60, 110, 1), rgba(39, 12, 74, 1));
 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+  background: linear-gradient(to right bottom, rgba(82, 60, 110, 1), rgba(39, 12, 74, 1));
+}
+
+.show-link {
+  color: white;
+  border: 1px solid white;
+  padding: 7px;
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+}
+
+.show-link:hover {
+  background-color: white;
+  color: rgba(39, 12, 74, 1);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.background-list-dev {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://img.freepik.com/premium-vector/seamless-graphic-pattern-styles-color-blue-background_136321-1075.jpg?);
+  background-repeat: repeat;
+  background-size: auto;
+
+}
+
+.list-dev-card {
+  transition: all .3s ease-in-out;
+}
+
+.list-dev-card:hover {
+  box-shadow: 0 0 20px rgba(250, 250, 250, .7);
 }
