@@ -82,4 +82,3 @@ end
 
 gem "webpacker", "~> 5.4"
 
-gem 'bootstrap-datepicker-rails'
