@@ -404,7 +404,7 @@ recruiter_4 = {
   website_url: "https://succexa.mu/",
   bio: "Succexa Ltd is a leading Sourcing & Headhunting company with the primary focus to promote jobs in Mauritius. Succexa Ltd is also considered as a ‘pole d’emploi’ which helps and supports our citizens (employed and unemployed) to secure a job offer and a long term employment. It does not operate as a classic recruitment company, but provides a more effective & efficient recruitment service to employers which helps their recruiters to hire their talents within a very short period of time. ",
   linkedin_url: "https://www.linkedin.com/company/succexa-ltd/",
-  image_url: "https://files.slack.com/files-pri/T02NE0241-F04CDFEQ2N4/download.jpg"
+  image_url: "https://succexa.mu/wp-content/uploads/2019/08/cropped-Succexa-Logo.png"
 }
 
 recruiter_5 = {
@@ -417,7 +417,7 @@ recruiter_5 = {
   website_url: "https://www.applebyglobal.com/",
   bio: "Appleby is one of the world’s leading offshore law firms. The Group has offices in the key offshore jurisdictions of Bermuda, the British Virgin Islands, the Cayman Islands, Guernsey, the Isle of Man, Jersey, Mauritius, and Seychelles, as well as a presence in the international financial centres of Hong Kong and Shanghai. ",
   linkedin_url: "https://www.linkedin.com/company/appleby/",
-  image_url: "https://files.slack.com/files-pri/T02NE0241-F04BLRVH0JZ/download__1_.jpg"
+  image_url: "https://www.caymancompass.com/wp-content/uploads/2016/11/appleby.jpg"
 }
 
 recruiter_6 = {
@@ -430,7 +430,7 @@ recruiter_6 = {
   website_url: "https://www.cybernaptics.mu/",
   bio: "Crossover’s mission is to democratize access to impactful, high-paying jobs. We recruit and screen only people with exemplary skills and drive to work with the world's best businesses. ",
   linkedin_url: "https://www.linkedin.com/company/cybernaptics-ltd/",
-  image_url: "https://files.slack.com/files-pri/T02NE0241-F04BH6LT4TY/download.png"
+  image_url: "https://media-exp1.licdn.com/dms/image/C560BAQEgohSuFDQqtg/company-logo_100_100/0/1579068695128?e=2147483647&v=beta&t=cmyVW5JrWT33vmj3E3LBU3AmCfIP7JCa6zVcw6oJb_A"
 }
 
 recruiter_7 = {
@@ -499,7 +499,7 @@ recruiter_11 = {
 }
 
 recruiter_12 = {
-  nickname: "TOTAL ENERGIES MOBILITY SERVICES INTERNATIONAL LTD (TEMSI)",
+  nickname: "TEMSI",
   developer: false,
   email: "temsi@gmail.com",
   password: "12345678",

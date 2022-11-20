@@ -5,18 +5,26 @@
     "@hotwired/stimulus": "^3.1.0",
     "@hotwired/turbo-rails": "^7.2.4",
     "@popperjs/core": "^2.11.6",
+    "@rails/webpacker": "5.4.3",
     "bootstrap": "^5.2.2",
+    "flatpickr": "^4.6.13",
     "jquery": "^3.6.1",
     "particles.js": "^2.0.0",
     "rails-particles.js": "^1.0.6",
     "stimulus-animated-number": "^4.0.0",
     "stimulus-carousel": "^4.0.0",
+    "stimulus-datepicker": "^1.0.1",
+    "stimulus-flatpickr": "^1.4.0",
     "stimulus-scroll-to": "^4.0.0",
     "typed.js": "^2.0.12",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
     "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.2",
+    "webpack-dev-server": "^3"
   }
 }
