@@ -1,51 +1,53 @@
 /* CSS */
 .btn-banner {
-  background-color: #7d2ae8;
-  border: 1px solid #7d2ae8;
-  border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
-  box-sizing: border-box;
-  color: #fff;
-  font-size: 16px;
-  outline: none;
-  outline: 0;
-  padding: 10px 25px;
-  text-align: center;
-  transition: transform 150ms, box-shadow 150ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+	background-color: #7d2ae8;
+	border: 1px solid #7d2ae8;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	outline: none;
+	outline: 0;
+	padding: 10px 25px;
+	text-align: center;
+	transition: transform 150ms, box-shadow 150ms;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
 }
 
 .btn-banner:hover {
-  box-shadow: rgba(250, 250, 250, .20) 0 3px 9px 0;
-  color: #fff;
+	box-shadow: rgba(250, 250, 250, .20) 0 3px 9px 0;
+	color: #fff;
 }
 
 @media (min-width: 768px) {
-  .btn-banner {
-    padding: 10px 30px;
-  }
+	.btn-banner {
+		padding: 10px 30px;
+	}
 }
 
 .btn-flat {
-  color: white;
-  padding: 8px 24px;
-  border-radius: 4px;
-  background: #670BFF;
-  transition: background 0.3s ease;
+	color: white;
+	padding: 8px 24px;
+	border-radius: 4px;
+	background: #670BFF;
+	transition: background 0.3s ease;
 }
 
 .btn-flat:hover {
-  background: #4D04C4;
-  color: white;
+	background: #4D04C4;
+	color: white;
 }
+
 .btn-highlight {
 	text-decoration: none;
 	transition: $transitionTimingFast;
 	position: relative;
 	padding: 0.3rem 0rem;
 	transition: $transitionTimingFast;
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -56,8 +58,10 @@
 		width: 11%;
 		transition: $transitionTimingFast;
 	}
+
 	&:hover {
 		transition: $transitionTimingFast;
+
 		&:before {
 			content: '';
 			position: absolute;
@@ -68,5 +72,24 @@
 			width: 0%;
 			transition: $transitionTimingFast;
 		}
+	}
+}
+
+.edit-job-btn {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 13px;
+	color: #670BFF;
+	padding: 7px;
+	border: 1px solid #670BFF;
+	border-radius: 50%;
+	transition: .3s;
+
+	&:hover {
+		transform: scale(1.1);
+		background: #670BFF;
+		color: white;
+		box-shadow: 0 0 8px #670BFF;
 	}
 }

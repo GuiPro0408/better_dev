@@ -79,3 +79,7 @@ group :test do
   gem "webdrivers"
 	gem 'turbolinks', '~> 5.2.0'
 end
+
+gem "webpacker", "~> 5.4"
+
+gem 'bootstrap-datepicker-rails'

@@ -10,7 +10,15 @@ application.register("animated-number", AnimatedNumberController)
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
-
-
 import TypedJsController from "./typed_js_controller"
 application.register("typed-js", TypedJsController)
+
+// import Flatpickr
+import Flatpickr from 'stimulus-flatpickr'
+
+// Import style for flatpickr
+require("flatpickr/dist/flatpickr.css")
+
+// Manually register Flatpickr as a stimulus controller
+application.register('flatpickr', Flatpickr)
+
