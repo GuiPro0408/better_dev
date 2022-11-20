@@ -11,25 +11,6 @@ Job.destroy_all
 
 puts "Creating User..."
 
-dev_1 = {
-  nickname: "Eren",
-  developer: true,
-  email: "eren.jaeger007@gmail.com",
-  password: "sasageyo1234",
-  address: "13, Titan Street,Beau Bassin",
-  mobile_phone: "5123 4562",
-  website_url: "https://itssharl.ee/fr",
-  experience_year: 8,
-  education_level: "Masters",
-  bio: "Skilled Programmer, Algorithms and data structures are second nature to me, as is problem solving.
-  Experienced in the design, debugging, development, and deployment of cloud-based scalable applications.
-  Deliver accurate and timely results. Self-learning for new information at a rapid pace. Effective communication
-  and collaboration with the team.",
-  linkedin_url: "https://www.linkedin.com/in/joelleteckyong/",
-  image_url: "https://xsgames.co/randomusers/assets/avatars/male/1.jpg",
-  type_of_developers: type_of_developers.sample
-}
-
 dev_2 = {
   nickname: "Kaneki",
   developer: true,
@@ -185,6 +166,21 @@ dev_10 = {
   bio: "I’m familiar with a variety of programming languages, including ASP .Net, JavaScript, HTML, CSS, Python, and jQuery, but I’m always adding new skills to my repertoire.",
   linkedin_url: "https://www.linkedin.com/in/pascal-berry/",
   image_url: "https://xsgames.co/randomusers/assets/avatars/male/10.jpg",
+  type_of_developers: type_of_developers.sample
+}
+dev_1 = {
+  nickname: "Gaurav",
+  developer: true,
+  email: "hiji762@yahoo.com",
+  password: "12345678",
+  address: "Grand baie",
+  mobile_phone: "5456 4866",
+  website_url: "https://bepatrickdavid.com//",
+  experience_year: 3,
+  education_level: "Diploma",
+  bio: "A passionate tech guy who loves to code and discover new things. Tech stack : HTML, CSS, JS, RUBY, RUBY ON RAILS",
+  linkedin_url: "https://www.linkedin.com/in/danjavia/",
+  image_url: "https://xsgames.co/randomusers/assets/avatars/male/19.jpg",
   type_of_developers: type_of_developers.sample
 }
 
@@ -350,6 +346,7 @@ dev_20 = {
   image_url: "https://xsgames.co/randomusers/assets/avatars/male/19.jpg",
   type_of_developers: type_of_developers.sample
 }
+
 
 recruiter_1 = {
   nickname: "SANDBOX",
