@@ -3,6 +3,6 @@
   <%= f.input :description %>
   <%= f.input :locations %>
   <%= f.select :employment_type, Job::EMPLOYEMENT_TYPE %>
-  <%= f.input :expiry_date %>
+  <%= f.input :expiry_date, html5: true, %>
   <%= f.submit %>
 <% end %>

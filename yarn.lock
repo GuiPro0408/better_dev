@@ -3079,11 +3079,6 @@ findup-sync@^3.0.0:
     micromatch "^3.0.4"
     resolve-dir "^1.0.1"
 
-flatpickr@^4.6.13:
-  version "4.6.13"
-  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.6.13.tgz#8a029548187fd6e0d670908471e43abe9ad18d94"
-  integrity sha512-97PMG/aywoYpB4IvbvUJi0RQi8vearvU0oov1WW3k0WZPBMrTQVqekSX5CjSG/M4Q3i6A/0FKXC7RyAoAUUSPw==
-
 flatted@^3.2.2:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
@@ -6465,16 +6460,6 @@ stimulus-carousel@^4.0.0:
   integrity sha512-AW0jC5xJ6IJ6HWo9dxVLmv02xvaYvLR5TAM8EKtH0lrqDqarzlOEVgnBefKsIqP1KMuIv74TtWKwwaY7ikfweQ==
   dependencies:
     swiper "^7.4.1"
-
-stimulus-datepicker@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/stimulus-datepicker/-/stimulus-datepicker-1.0.1.tgz#a917f70d0c87b9a8cb578beb4da38ce62c3d7210"
-  integrity sha512-xiJouzpE6pxKcp82w5NmV0w9YyEP3ro4r99b1srEQIIFRm1fdZA1Hh7NQPLFpPJG82z3m/OBH5jO9RUu9xnuvQ==
-
-stimulus-flatpickr@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/stimulus-flatpickr/-/stimulus-flatpickr-1.4.0.tgz#a41071a3e69cfc50b7eaaacf356fc0ab1ab0543c"
-  integrity sha512-rcC/c9+E+f5W2kOjaaLShtf3i+p95ACqt+oGzSAgeuZh2YeIN8gW4EWO7h0STBLzSVPl6BjIfPWP7upMPavIVQ==
 
 stimulus-scroll-to@^4.0.0:
   version "4.0.0"
