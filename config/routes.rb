@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users 
+  match '/users/:id' => 'reviews#create', as: :user_reviews, via: [:patch]
+  
   root to: "pages#home"
   get "users", to: "pages#developers"
   get "users/:id", to: "pages#user_show", as: 'user_show'
