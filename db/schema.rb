@@ -20,7 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_15_160713) do
     t.bigint "job_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "status", default: "pending"
+    t.string "status"
     t.index ["job_id"], name: "index_applications_on_job_id"
     t.index ["user_id"], name: "index_applications_on_user_id"
   end

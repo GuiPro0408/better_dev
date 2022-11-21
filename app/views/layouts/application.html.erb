@@ -12,13 +12,15 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body id="#body"><%= render "shared/navbar" %>
-<%= render "shared/flashes" %>
+  <body id="#body">
+    <%= render "shared/navbar" %>
+    <%= render "shared/flashes" %>
 
-<a href="#body" id="scrollTop" data-controller="scroll-to"><i class="fa-solid fa-arrow-up"></i></a>
+    <a href="#body" id="scrollTop" data-controller="scroll-to"><i class="fa-solid fa-arrow-up"></i></a>
 
-
-    <%= yield %>
+    <div style = "padding-top: 76px">
+      <%= yield %>
+    </div>
 		<%= render "shared/footer" %>
   </body>
 </html>
