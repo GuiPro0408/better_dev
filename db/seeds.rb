@@ -10,6 +10,21 @@ User.destroy_all
 Job.destroy_all
 
 puts "Creating User..."
+dev_1 = {
+  nickname: "Gaurav",
+  developer: true,
+  email: "hiji762@yahoo.com",
+  password: "12345678",
+  address: "Grand baie",
+  mobile_phone: "5456 4866",
+  website_url: "https://bepatrickdavid.com//",
+  experience_year: 3,
+  education_level: "Diploma",
+  bio: "A passionate tech guy who loves to code and discover new things. Tech stack : HTML, CSS, JS, RUBY, RUBY ON RAILS",
+  linkedin_url: "https://www.linkedin.com/in/danjavia/",
+  image_url: "https://xsgames.co/randomusers/assets/avatars/male/1.jpg",
+  type_of_developers: type_of_developers.sample
+}
 
 dev_2 = {
   nickname: "Kaneki",
@@ -166,21 +181,6 @@ dev_10 = {
   bio: "I’m familiar with a variety of programming languages, including ASP .Net, JavaScript, HTML, CSS, Python, and jQuery, but I’m always adding new skills to my repertoire.",
   linkedin_url: "https://www.linkedin.com/in/pascal-berry/",
   image_url: "https://xsgames.co/randomusers/assets/avatars/male/10.jpg",
-  type_of_developers: type_of_developers.sample
-}
-dev_1 = {
-  nickname: "Gaurav",
-  developer: true,
-  email: "hiji762@yahoo.com",
-  password: "12345678",
-  address: "Grand baie",
-  mobile_phone: "5456 4866",
-  website_url: "https://bepatrickdavid.com//",
-  experience_year: 3,
-  education_level: "Diploma",
-  bio: "A passionate tech guy who loves to code and discover new things. Tech stack : HTML, CSS, JS, RUBY, RUBY ON RAILS",
-  linkedin_url: "https://www.linkedin.com/in/danjavia/",
-  image_url: "https://xsgames.co/randomusers/assets/avatars/male/19.jpg",
   type_of_developers: type_of_developers.sample
 }
 
@@ -343,7 +343,7 @@ dev_20 = {
   education_level: "Certificate",
   bio: "My name is Dany Juste and I am a Junior Web Developer for Oswald Technologies. I am an accomplished coder and programmer, and I enjoy using my skills to contribute to the exciting technological advances that happen every day at Oswald Tech. I graduated from the California Institute of Technology in 2019 with a bachelor's degree in software development. While in school, I earned the 2015 Edmund Gains Award for my exemplary academic performance and leadership skills.",
   linkedin_url: "https://www.linkedin.com/in/danjavia/",
-  image_url: "https://xsgames.co/randomusers/assets/avatars/male/19.jpg",
+  image_url: "https://xsgames.co/randomusers/assets/avatars/male/20.jpg",
   type_of_developers: type_of_developers.sample
 }
 
