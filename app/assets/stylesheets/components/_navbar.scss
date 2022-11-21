@@ -1,32 +1,14 @@
-// .navbar-lewagon {
-//   justify-content: space-between;
-//   background: white;
-// }
-
-// .navbar-lewagon .navbar-collapse {
-//   flex-grow: 0;
-// }
-
-// .navbar-lewagon .navbar-brand img {
-//   width: 40px;
-// }
 .navbar-lewagon .navbar-brand img {
 	width: 70px !important;
 	height: 40px !important;
 }
-.active a {
-	color: red;
-}
-.actif {
-	color: white;
-	background: rgb(70, 70, 70);
-}
-
 
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
 	padding: 17px 0px 9px 0;
+	position: fixed;
+	width: 100%;
 	z-index: 10;
 	.navbar-collapse {
 		flex-grow: 0;
