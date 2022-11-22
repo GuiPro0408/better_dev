@@ -1,0 +1,5 @@
+meta_product_name: "Better Dev"
+meta_title: "Better Dev - How work should work"
+meta_description: "Better Dev connects businesses with professionals developers and agencies around the globe."
+meta_image: "logo.png" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards

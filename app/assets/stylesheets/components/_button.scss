@@ -94,3 +94,36 @@
 		box-shadow: 0 0 8px #670BFF;
 	}
 }
+
+.user-social-btn {
+	font-size: 15px;
+	color: #670BFF;
+	padding: 7px;
+	border: 1px solid #670BFF;
+	border-radius: 50%;
+	transition: .3s;
+
+	&:hover {
+		transform: scale(1.1);
+		background: #670BFF;
+		color: white;
+		box-shadow: 0 0 8px #670BFF;
+	}
+}
+
+.btn-delete {
+	font-size: 15px;
+	color: #D11A2A;
+	padding: 5px 12px;
+	border-radius: 5px;
+	border: 1px solid #D11A2A;
+	transition: .3s;
+	font-weight: bold;
+
+	&:hover {
+		transform: scale(1.05);
+		background: #D11A2A;
+		color: white;
+		box-shadow: 0 0 6px #D11A2A;
+	}
+}
