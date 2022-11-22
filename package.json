@@ -5,7 +5,7 @@
     "@hotwired/stimulus": "^3.1.0",
     "@hotwired/turbo-rails": "^7.2.4",
     "@popperjs/core": "^2.11.6",
-    "@rails/actiontext": "^7.0.4",
+    "@rails/actiontext": "*",
     "@rails/webpacker": "5.4.3",
     "bootstrap": "^5.2.2",
     "jquery": "^3.6.1",
@@ -14,10 +14,10 @@
     "stimulus-animated-number": "^4.0.0",
     "stimulus-carousel": "^4.0.0",
     "stimulus-scroll-to": "^4.0.0",
-    "trix": "^2.0.0",
+    "trix": "*",
     "typed.js": "^2.0.12",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12"
+    "webpack": "^5.75.0",
+    "webpack-cli": "*"
   },
   "scripts": {
     "build": "webpack --config webpack.config.js"
