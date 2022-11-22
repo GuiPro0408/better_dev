@@ -80,5 +80,5 @@ group :test do
 	gem 'turbolinks', '~> 5.2.0'
 end
 
-gem "webpacker", "~> 5.4"
+# gem "webpacker", "~> 5.4"
 
