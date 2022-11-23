@@ -1,3 +1,9 @@
+<style>
+	.user-link:hover {
+		text-decoration: none;
+	}
+</style>
+
 <div class="container margTop2">
 	<div class="row ">
 		<div class="col-md-12 d-flex justify-content-center">
@@ -32,7 +38,10 @@
 				<p class = "fw-bold"><%= job.title %></p>
 				<p><%= truncate job.description, length: 200 %></p>
 				<p><%= job.expiry_date %></p>
-				<p>By <span class = "fw-bold"><%= job.user.nickname %></span></p>
+				<div class = "d-flex align-items-center mb-4 gap-1">
+					<div>By</div> 
+					<div class = "fw-bold"><%= link_to(job.user.nickname, user_show_path(job.user), target: "_blank", class: 'text-dark user-link') %></div>
+				</div>
 
 				<%= link_to("Read More", job_path(job), class: 'btn-highlight d-flex text-black') %>
 				<% if job.user == current_user %>

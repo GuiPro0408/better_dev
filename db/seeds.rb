@@ -452,7 +452,7 @@ recruiter_8 = {
   mobile_phone: "5798 6546",
   website_url: "https://windows.com",
   bio: "Our purpose is to build trust in society and solve important problems. We're a network of firms in 152 countries with over 327,000 people who are committed to delivering quality in technological and web services. ",
-  linkedin_url: "linkedin.com/windows",
+  linkedin_url: "https://www.linkedin.com/company/windows-developer/",
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/1024px-Windows_logo_-_2012.svg.png"
 }
 
@@ -465,7 +465,7 @@ recruiter_9 = {
   mobile_phone: "5499 5565",
   website_url: "https://orange.com",
   bio: "Today, Orange provides a highly reliable, scalable, low-cost infrastructure platform in the cloud that powers hundreds of thousands of businesses in 190 countries around the world. With data center locations in the U.S., Europe, Brazil, Singapore, Japan, and Australia, customers across all industries are taking advantage of the following benefits: web services,  networking and  digital services. ",
-  linkedin_url: "linkedin.com/orange",
+  linkedin_url: "https://www.linkedin.com/company/orange/",
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Orange_logo.svg/2048px-Orange_logo.svg.png"
 }
 
@@ -478,7 +478,7 @@ recruiter_10 = {
   mobile_phone: "5748 5454",
   website_url: "https://aws.com",
   bio: "In 2006, Amazon Web Services (AWS) began offering IT infrastructure services to businesses in the form of web services -- now commonly known as cloud computing. One of the key benefits of cloud computing is the opportunity to replace up-front capital infrastructure expenses with low variable costs that scale with your business. With the Cloud, businesses no longer need to plan for and procure servers and other IT infrastructure weeks or months in advance. Instead, they can instantly spin up hundreds or thousands of servers in minutes and deliver results faster. ",
-  linkedin_url: "linkedin.com/aws",
+  linkedin_url: "https://www.linkedin.com/company/aws-jobs/",
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png"
 }
 
@@ -491,7 +491,7 @@ recruiter_11 = {
   mobile_phone: "5413 3215",
   website_url: "https://sdworx.com",
   bio: "SD Worx provides a wide range of solutions to customers worldwide including payroll and HR, legal support, training, automation, consulting and outsourcing. Today, more than 63,000 large and small organisations across the globe rely on the more than 70 years of expertise that SD Worx has acquired. ",
-  linkedin_url: "linkedin.com/sdworx",
+  linkedin_url: "https://www.linkedin.com/company/sd-worx-mauritius/",
   image_url: "https://myjobmu-web-prd.s3.eu-west-1.amazonaws.com/assets/employer-logos/113662.gif?AWSAccessKeyId=AKIAIK67A3XI4BY5M6XA&Expires=1699634389&Signature=5l0k4Qlz6aHJlx2QUOmxZFZOXFk%3D"
 }
 
@@ -504,7 +504,7 @@ recruiter_12 = {
   mobile_phone: "5413 3215",
   website_url: "https://temsi.com",
   bio: "We are a Mauritius-based company, specialized in Electronic Payment systems providing state-of-the-art solutions and services in an end-to-end model, both locally and remotely. A pioneer in the field, our core values centre around innovation, creativity and cutting-edge technology. Now a major E-Payment Solutions provider at an international level, we have a market presence of over 20 years in Mauritius and have operated in more than 30 countries across the globe and counting. ",
-  linkedin_url: "linkedin.com/totalenergies",
+  linkedin_url: "https://www.linkedin.com/company/temsi/",
   image_url: "https://companieslogo.com/img/orig/TTE-2bb970d8.png"
 }
 
