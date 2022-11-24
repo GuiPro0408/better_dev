@@ -125,7 +125,7 @@
                 <div class="col">
                   <div class="profile-info">
                     <div class="row align-items-center">
-                      <h4 class = "col-9"><%= application.job.title %></h4>
+                      <h4 class = "col-9"><%= link_to(application.job.title, job_path(application.job), target: "_blank", class: "text-dark") %></h4>
                       <span class = "col-3 text-end text-muted fs-6"><%= application.created_at.strftime("%Y/%m/%d") %></span>
                     </div>
                     <% if application.status == 'accepted' %>
