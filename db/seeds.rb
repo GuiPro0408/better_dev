@@ -10,6 +10,21 @@ User.destroy_all
 Job.destroy_all
 
 puts "Creating User..."
+dev_1 = {
+  nickname: "Gaurav",
+  developer: true,
+  email: "hiji762@yahoo.com",
+  password: "12345678",
+  address: "Grand baie",
+  mobile_phone: "5456 4866",
+  website_url: "https://bepatrickdavid.com//",
+  experience_year: 3,
+  education_level: "Diploma",
+  bio: "A passionate tech guy who loves to code and discover new things. Tech stack : HTML, CSS, JS, RUBY, RUBY ON RAILS",
+  linkedin_url: "https://www.linkedin.com/in/danjavia/",
+  image_url: "https://xsgames.co/randomusers/assets/avatars/male/1.jpg",
+  type_of_developers: type_of_developers.sample
+}
 
 dev_2 = {
   nickname: "Kaneki",
@@ -166,21 +181,6 @@ dev_10 = {
   bio: "I’m familiar with a variety of programming languages, including ASP .Net, JavaScript, HTML, CSS, Python, and jQuery, but I’m always adding new skills to my repertoire.",
   linkedin_url: "https://www.linkedin.com/in/pascal-berry/",
   image_url: "https://xsgames.co/randomusers/assets/avatars/male/10.jpg",
-  type_of_developers: type_of_developers.sample
-}
-dev_1 = {
-  nickname: "Gaurav",
-  developer: true,
-  email: "hiji762@yahoo.com",
-  password: "12345678",
-  address: "Grand baie",
-  mobile_phone: "5456 4866",
-  website_url: "https://bepatrickdavid.com//",
-  experience_year: 3,
-  education_level: "Diploma",
-  bio: "A passionate tech guy who loves to code and discover new things. Tech stack : HTML, CSS, JS, RUBY, RUBY ON RAILS",
-  linkedin_url: "https://www.linkedin.com/in/danjavia/",
-  image_url: "https://xsgames.co/randomusers/assets/avatars/male/19.jpg",
   type_of_developers: type_of_developers.sample
 }
 
@@ -343,7 +343,7 @@ dev_20 = {
   education_level: "Certificate",
   bio: "My name is Dany Juste and I am a Junior Web Developer for Oswald Technologies. I am an accomplished coder and programmer, and I enjoy using my skills to contribute to the exciting technological advances that happen every day at Oswald Tech. I graduated from the California Institute of Technology in 2019 with a bachelor's degree in software development. While in school, I earned the 2015 Edmund Gains Award for my exemplary academic performance and leadership skills.",
   linkedin_url: "https://www.linkedin.com/in/danjavia/",
-  image_url: "https://xsgames.co/randomusers/assets/avatars/male/19.jpg",
+  image_url: "https://xsgames.co/randomusers/assets/avatars/male/20.jpg",
   type_of_developers: type_of_developers.sample
 }
 
@@ -401,7 +401,7 @@ recruiter_4 = {
   website_url: "https://succexa.mu/",
   bio: "Succexa Ltd is a leading Sourcing & Headhunting company with the primary focus to promote jobs in Mauritius. Succexa Ltd is also considered as a ‘pole d’emploi’ which helps and supports our citizens (employed and unemployed) to secure a job offer and a long term employment. It does not operate as a classic recruitment company, but provides a more effective & efficient recruitment service to employers which helps their recruiters to hire their talents within a very short period of time. ",
   linkedin_url: "https://www.linkedin.com/company/succexa-ltd/",
-  image_url: "https://files.slack.com/files-pri/T02NE0241-F04CDFEQ2N4/download.jpg"
+  image_url: "https://succexa.mu/wp-content/uploads/2019/08/cropped-Succexa-Logo.png"
 }
 
 recruiter_5 = {
@@ -414,7 +414,7 @@ recruiter_5 = {
   website_url: "https://www.applebyglobal.com/",
   bio: "Appleby is one of the world’s leading offshore law firms. The Group has offices in the key offshore jurisdictions of Bermuda, the British Virgin Islands, the Cayman Islands, Guernsey, the Isle of Man, Jersey, Mauritius, and Seychelles, as well as a presence in the international financial centres of Hong Kong and Shanghai. ",
   linkedin_url: "https://www.linkedin.com/company/appleby/",
-  image_url: "https://files.slack.com/files-pri/T02NE0241-F04BLRVH0JZ/download__1_.jpg"
+  image_url: "https://www.caymancompass.com/wp-content/uploads/2016/11/appleby.jpg"
 }
 
 recruiter_6 = {
@@ -427,7 +427,7 @@ recruiter_6 = {
   website_url: "https://www.cybernaptics.mu/",
   bio: "Crossover’s mission is to democratize access to impactful, high-paying jobs. We recruit and screen only people with exemplary skills and drive to work with the world's best businesses. ",
   linkedin_url: "https://www.linkedin.com/company/cybernaptics-ltd/",
-  image_url: "https://files.slack.com/files-pri/T02NE0241-F04BH6LT4TY/download.png"
+  image_url: "https://media-exp1.licdn.com/dms/image/C560BAQEgohSuFDQqtg/company-logo_100_100/0/1579068695128?e=2147483647&v=beta&t=cmyVW5JrWT33vmj3E3LBU3AmCfIP7JCa6zVcw6oJb_A"
 }
 
 recruiter_7 = {
@@ -452,7 +452,7 @@ recruiter_8 = {
   mobile_phone: "5798 6546",
   website_url: "https://windows.com",
   bio: "Our purpose is to build trust in society and solve important problems. We're a network of firms in 152 countries with over 327,000 people who are committed to delivering quality in technological and web services. ",
-  linkedin_url: "linkedin.com/windows",
+  linkedin_url: "https://www.linkedin.com/company/windows-developer/",
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/1024px-Windows_logo_-_2012.svg.png"
 }
 
@@ -465,7 +465,7 @@ recruiter_9 = {
   mobile_phone: "5499 5565",
   website_url: "https://orange.com",
   bio: "Today, Orange provides a highly reliable, scalable, low-cost infrastructure platform in the cloud that powers hundreds of thousands of businesses in 190 countries around the world. With data center locations in the U.S., Europe, Brazil, Singapore, Japan, and Australia, customers across all industries are taking advantage of the following benefits: web services,  networking and  digital services. ",
-  linkedin_url: "linkedin.com/orange",
+  linkedin_url: "https://www.linkedin.com/company/orange/",
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Orange_logo.svg/2048px-Orange_logo.svg.png"
 }
 
@@ -478,7 +478,7 @@ recruiter_10 = {
   mobile_phone: "5748 5454",
   website_url: "https://aws.com",
   bio: "In 2006, Amazon Web Services (AWS) began offering IT infrastructure services to businesses in the form of web services -- now commonly known as cloud computing. One of the key benefits of cloud computing is the opportunity to replace up-front capital infrastructure expenses with low variable costs that scale with your business. With the Cloud, businesses no longer need to plan for and procure servers and other IT infrastructure weeks or months in advance. Instead, they can instantly spin up hundreds or thousands of servers in minutes and deliver results faster. ",
-  linkedin_url: "linkedin.com/aws",
+  linkedin_url: "https://www.linkedin.com/company/aws-jobs/",
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png"
 }
 
@@ -491,12 +491,12 @@ recruiter_11 = {
   mobile_phone: "5413 3215",
   website_url: "https://sdworx.com",
   bio: "SD Worx provides a wide range of solutions to customers worldwide including payroll and HR, legal support, training, automation, consulting and outsourcing. Today, more than 63,000 large and small organisations across the globe rely on the more than 70 years of expertise that SD Worx has acquired. ",
-  linkedin_url: "linkedin.com/sdworx",
+  linkedin_url: "https://www.linkedin.com/company/sd-worx-mauritius/",
   image_url: "https://myjobmu-web-prd.s3.eu-west-1.amazonaws.com/assets/employer-logos/113662.gif?AWSAccessKeyId=AKIAIK67A3XI4BY5M6XA&Expires=1699634389&Signature=5l0k4Qlz6aHJlx2QUOmxZFZOXFk%3D"
 }
 
 recruiter_12 = {
-  nickname: "TOTAL ENERGIES MOBILITY SERVICES INTERNATIONAL LTD (TEMSI)",
+  nickname: "TEMSI",
   developer: false,
   email: "temsi@gmail.com",
   password: "12345678",
@@ -504,7 +504,7 @@ recruiter_12 = {
   mobile_phone: "5413 3215",
   website_url: "https://temsi.com",
   bio: "We are a Mauritius-based company, specialized in Electronic Payment systems providing state-of-the-art solutions and services in an end-to-end model, both locally and remotely. A pioneer in the field, our core values centre around innovation, creativity and cutting-edge technology. Now a major E-Payment Solutions provider at an international level, we have a market presence of over 20 years in Mauritius and have operated in more than 30 countries across the globe and counting. ",
-  linkedin_url: "linkedin.com/totalenergies",
+  linkedin_url: "https://www.linkedin.com/company/temsi/",
   image_url: "https://companieslogo.com/img/orig/TTE-2bb970d8.png"
 }
 
@@ -532,7 +532,10 @@ puts "User Creation done"
 
 job_1 = {
   title: "Développeur Full stack",
-  description: "Développer des applicatifs web permettant de stocker, lire, rechercher des données en base de données depuis un frontal web, principalement en architecture MVC Web PHP et Mysql",
+  description: "Vos missions  Développer l’application Optimiso Suite (Mobile, Front- et Back-end), de la définition des spécifications d’une nouvelle fonctionnalité jusqu’au déploiement  Assurer la qualité du logiciel : revues de code, tests automatisés et manuels,
+
+  Votre profil
+  Essentiel  Formation supérieure en informatique (ou expérience pratique équivalente)  Parfaite maîtrise du développement orienté objet (C#, ES6, TypeScript)  Bonne maîtrise du développement et de l’optimisation de bases de données  Grande capacité d’apprentissage et d’adaptation à de nouvelles technologies  Aisance à communiquer tant avec des interlocuteurs techniques que non-techniques  Parfaite maîtrise du français, bon niveau d’anglais, allemand un atout  Esprit d’initiative, rigueur et autonomie",
   locations: "Grand Baie La Croisette, ABZ Global Solutions Ltd",
   employment_type: "Full-time",
   expiry_date: Date.new(2022,12,15),
@@ -541,8 +544,18 @@ job_1 = {
 
 job_2 = {
   title: "React Native Engineer (Intermediate)",
-  description: "We are looking for an experienced frontend developer who demonstrates a high level of curiosity and keeps up with the latest technologies.
-  You have developed and maintained multiple frontend applications throughout the entirety of their lifecycle.",
+  description: "We are looking for an experienced frontend developer who demonstrates a high level of curiosity and keeps up with the latest technologies. You have developed and maintained multiple frontend applications throughout the entirety of their lifecycle.
+
+ 
+
+  Responsibilities:
+ 
+ Architect and develop robust web applications
+ Take ownership of tasks from start to completion
+ Work closely with other engineers, product managers and designers
+ Fix bugs, improve workflows, and suggest changes to make the team more productive
+ Break down tasks into small tickets and actively engage with agile process
+ Strong attention to detail placing the end user at the forefront of all decisions",
   locations: "Grand Baie La Croisette, ABZ Global Solutions Ltd",
   employment_type: "Full-time",
   expiry_date: Date.new(2022,11,30),
@@ -551,8 +564,25 @@ job_2 = {
 
 job_3 = {
   title: "Front-end Developer",
-  description: "Group with over 750,000 monthly website visitors, Rs 500M in sales, consisting of Deals.mu, Otayo.com, MauritiusAttractions.com, Cinema.mu, Restaurants.mu and many more.
-  With a modern touch, his is the ideal home for any web developer looking to learn, grow and build a great career for them.",
+  description: "We are searching for frontend web developer with good knowledge of JavaScript.
+
+  The requirements are as follows:
+  
+  - In-depth knowledge of modern Web technologies – JavaScript, Vuejs, Angular or React.
+  
+  - Knowledge of HTML and CSS
+  
+  - Thorough understanding of Vue.js and its core principles
+  
+  - Experience with common front-end development tools such as Babel, Webpack, NPM, etc.
+  
+  - Familiarity with RESTful APIs
+  
+  - Familiarity with code versioning tools (Git)
+  
+  - Understanding of architecture and design across all systems
+  
+  - work experience (> 1 year & < 5 years)",
   locations: "Grand Baie La Croisette, ABZ Global Solutions Ltd",
   employment_type: "Part-time",
   expiry_date: Date.new(2022,11,27),
@@ -561,7 +591,15 @@ job_3 = {
 
 job_4 = {
   title: "DEVELOPPEUR PHP",
-  description: "Dans le cadre du développement de notre société, nous recherchons un développeur d,application web.",
+  description: "Dans le cadre du développement de notre société, nous recherchons un développeur d’application web.
+
+  Compétences demandées :
+  • Connaissance en développement sur PHP
+  • Maîtrise des technologies (PHP, HTML, CSS, MySQL)
+  
+  Profil :
+  
+  Vous êtes diplômé(e) d’une formation en informatique avec une première expérience réussie dans le développement d’applications. Vous aimez investir dans votre travail. Nous avons un poste avec des opportunités d'évolution.",
   locations: "Royal Road - Pointe aux Canonniers, Grand Bay, Mauritius",
   employment_type: "Temporary",
   expiry_date: Date.new(2022,12,16),
@@ -570,27 +608,58 @@ job_4 = {
 
 job_5 = {
   title: "BACKEND DEVELOPER",
-  description: "We're looking for an experienced Backend Developer (RASA) to help us change the way the world works, with anytime, anywhere, any-device productivity.
-  Here, you'll design and develop highly available services for users from all over the world with our Parallels team.",
+  description: "We are excited to be looking for candidates in Mauritius to fill this role. There is one position available across these locations with work-from-home flexibility.
+
+  Push the boundaries of tech. In your sweatpants.
+  
+  We’re looking for an experienced Backend Developer (RASA) to help us change the way the world works, with anytime, anywhere, any-device productivity. Here, you’ll design and develop highly available services for users from all over the world with our Parallels team.
+  
+  The top creative and technical minds could work anywhere. So why are so many of them choosing Corel?
+  
+  Here are three reasons:
+  • This is the moment. It’s an exciting time at Corel, with new leadership, a refreshed brand, and a whole new approach to changing the way the world works. We’re at the forefront of a movement, and we want you to ride this wave with us.
+  • We want you to be you. Too often, companies tell you about their culture and then expect you to fit it. Our culture is built from the people who work here. We want you to feel safe to be who you are, take risks, and show us what you’ve got.",
   locations: "Royal Road - Pointe aux Canonniers, Grand Bay, Mauritius",
   employment_type: "Temporary",
   expiry_date: Date.new(2023,01,10),
   user: User.find_by(nickname: "Crossover")
 }
 job_6 = {
-  title: "BACKEND DEVELOPER",
-  description: "We're looking for an experienced Backend Developer (RASA) to help us change the way the world works, with anytime, anywhere, any-device productivity.
-  Here, you'll design and develop highly available services for users from all over the world with our Parallels team.",
+  title: "Senior BackEnd Developer",
+  description: "SD Worx is a leading European provider of Payroll & HR services with global reach. We have offices in Europe and an office in Mauritius. Our goal? We bring people solutions to life. So companies of any size can turn Human Resources into a source of value for the business and the people in it. Our people solutions span the entire employee journey, from getting people paid to attracting, rewarding, and developing talent.
+
+  The Senior Software Developer will have to ensure the delivery of quality software solutions via development, testing or support activities and is also actively involved in providing support to junior team members via reviewing and coaching activities if required.
+  
+  Essential Duties
+  • Apply technical knowledge, skills and expertise to provide development, testing or support service to clients and customers
+  • Achieve delivery of core/customized products in accordance with agreed schedules, procedures and standards
+  • Accurate recording of time, effort and schedule related...",
   locations: "Royal Road - Pointe aux Canonniers, Grand Bay, Mauritius",
   employment_type: "Temporary",
   expiry_date: Date.new(2023,01,10),
-  user: User.find_by(nickname: "IPEDIS")
+  user: User.find_by(nickname: "SDWorx")
 }
 
 job_7 = {
   title: "SOFTWARE DEVELOPER",
-  description: "To develop software applications in line with business needs.Design, develop and deploy software applications,Analyse the needs of users and provide
-  assistance/training in IT Solutions,Bring innovative ideas to improve existing software",
+  description: "Understand the requirements of specifications, marketing briefs, etc. and formalize them, decline in software solution, user stories
+
+  Produce: specifications, code, tests, settings, corrective analyzes, performance evaluation, recipes, forecast, tooling integration in production.
+  
+  Interact / Share with management & stakeholders, improve progress / planning adequacy, ability to produce, incident management, product implementation.
+  
+  Share: good practices, pair programming, needs review, etc.
+  
+  Keep up to date: keep abreast of and apply changes to tools, business or functional applications, technical innovations & methodologies, digital development.
+  
+  Qualifications:
+  • Visual Basic or VB.NET
+  • SQL, mySQL Knowledge
+  • Power BI
+  • Power Query
+  • Power Automate
+  • HTML, PHP, CSS, Javascript
+  ",
   locations: "Rue de la Democratie, Ebene Junction, Ground Floor, Suite 011, Ebene, Mauritius",
   employment_type: "Full-time",
   expiry_date: Date.new(2023, 12, 3),
@@ -599,8 +668,11 @@ job_7 = {
 
 job_8 = {
   title: "DÉVELOPPEUR .NET FRONT",
-  description: "Skill and You, en pleine croissance, recherche ses futurs développeurs Net.Front. Envie de rejoindre une équipe dynamique pour une entreprise qui
-  met l'humain au cœur de son activité?",
+  description: "Vous intégrerez l'équipe .Net qui se structure en méthodologie Agile. Développant nos propres outils en interne, vous vous occupez à la fois de la conception et de la réalisation de projets innovants à forte valeur ajoutée.
+
+  Vous participez au développement et à l'apport d'innovations de notre LMS (Learning Management System). Il s'agit de notre plateforme d'e-learning (AppMobile, Web, Quizz, Classe virtuelle, ect…) permettant à nos 120K anciens apprenants.
+  
+  Vous faites preuve de créativité et d'autonomie dans votre activité vous permettant de prendre en charge un développement dans sa globalité.",
   locations: "Newry Complex, St-Jean Road, Quatre-Bornes, Quatre-Bornes, Mauritius",
   employment_type: "Freelance",
   expiry_date: Date.new(2023, 12, 4),
@@ -608,8 +680,19 @@ job_8 = {
 }
 
 job_9 = {
-  title: "SEO ANALYST",
-  description: "Linkeo est un leader depuis 2000 ans dans le marketing digital pour les artisans et TPE : création de site web, référencement, applis mobiles, photos et vidéos.",
+  title: "Software Developer Intern",
+  description: "The selected candidate will be taken on the Youth Employment Programme and will have the possibility to be confirmed upon good performance, after completion of one year.
+
+  If you are agile and have a pioneering mind-set, join a winning team so that we can evolve together.
+  
+  Outline of job role and purpose:
+  • Assist in software customisation and software programming.
+  • Facilitate the successful analysis, design, development, implementation and maintenance of software solutions for clients, including off-site and on-site work.
+  • Provide support on technical documentation.
+  • Debug system issues and find solutions.
+  • Support and drive process change and communication in accordance with software best practices.
+  • Assist in providing go-live and post go-live support.
+  ",
   locations: "4ème étage, batiment Columbia Court, Angle avenue Draper & Route St Jean, Quatre Bornes, Mauritius",
   employment_type: "Full-time",
   expiry_date: Date.new(2023, 12, 5),
@@ -617,9 +700,17 @@ job_9 = {
 }
 
 job_10 = {
-  title: "DEVELOPPER PHP",
-  description: "ODS est une agence experte de la sous traitance web et informatique.Nous concevons, développons et maintenons des applications et sites web performants qui peuvent
-  répondre à des problématiques business et techniques complexes.",
+  title: "Senior PHP Developer",
+  description: "The ideal candidate will efficiently and quickly write PHP in a timely and scalable way in order to improve the code-base of the company's products in meaningful ways. This candidate will be able to test the code and make adjustments where necessary. They should also be experience in contributing to the whole software design lifecycle.
+
+  Responsibilities
+  • Develop, review, and deploy new features to facilitate related procedures and tools if necessary.
+  • Troubleshoot, test, and maintain the core product software and databases to ensure strong optimization and functionality.
+  • Write clean, well-designed code as per industry standards & best practices
+  • Produce detailed specifications.
+  • Contribute to all phases of the development lifecycle.
+  • Provide mentorship and guidance to junior developers in the team.
+  ",
   locations: "Fanfaron Quays, united Docks, Port Louis, Mauritius",
   employment_type: "Part-time",
   expiry_date: Date.new(2023, 12, 8),
@@ -628,8 +719,17 @@ job_10 = {
 
 job_11 = {
   title: "Front-End Developer",
-  description: "We are looking for a Front-End Developer for a well known company based in Mauritius. We are 60 employees thriving to innovate, develop and maintain the Company’s software solutions.
-  More specifically, we work closely with various Marketing & Services subsidiaries to develop Mobility oriented solutions, a fast growing & transforming sector.",
+  description: "As a Front End Developer, you will translate our company and customer needs into functional and appealing interactive application. You will support the development of our HR & Payroll online platform by improving the design consistency of our product and the user experience. You will act as the reference point to the team of developers for advice and compliance of the design system.
+
+  What would you do as a Front End Developer at Popay?
+  • Assist the Product Manager in making the application ergonomic and accessible for users by developing a clear, fast and easy-to-use interface;
+  • Work in collaboration with the Lead Developer to ensure the development of the frontend interface from models made under Figma;
+  • Develop the graphic overhaul of the modules of our product and the deployment of this new charter on all fronts;
+  • Play an advisory role and be a source of proposals on all design choices and improvement of the user experience;
+  • Collaborate with back-end developers to improve usability;
+  • Perform routine maintenance and performance optimizations of our online platform (ease of use, speed and other quality factors);
+  • Run tests to ensure code strings perform the correct functions;
+  ",
   locations: "1 Cybercity, Ebene, Mauritius",
   employment_type: "Freelance",
   expiry_date: Date.new(2023, 12, 11),
@@ -637,7 +737,7 @@ job_11 = {
 }
 
 job_12 = {
-  title: "SCRIPTEUR (HTML, CSS, JS, PYTHON)",
+  title: "FULL STACK DEVELOPERS",
   description: "Bilendi se positionne au coeur de la data sur 2 piliers principaux les « Services for Market Research » (marché des études) et
   les « Services for Customer Engagement and Loyalty » (marché de la fidélisation).",
   locations: "Nexteracom Tower II, Level 2, Ebène, Mauritius",
@@ -648,7 +748,22 @@ job_12 = {
 
 job_13 = {
   title: "DEVELOPER FRONT END",
-  description: "WSHOP est une Plateforme SaaS de Commerce Digitale Unifiée, qui regroupe tous les outils indispensables pour déployer l'eCommerce et la Transformation Digitale des points de vente physique de nos clients.",
+  description: "We are looking for Software Developers to produce scalable software solutions. You’ll be part of a cross-functional Agile team who will be responsible for developing highly interactive Web/Mobile based applications.
+
+  KEY FUNCTIONS
+  • Work with development teams to ideate software solutions
+  • Build the front-end of applications through appealing visual design
+  • Develop and manage well-functioning applications
+  • Test software to ensure responsiveness and efficiency
+  • Troubleshoot, debug and upgrade software
+  
+  EXPERIENCE & QUALIFICATION REQUIRED
+  • Proficiency with programming languages like PHP, Java and C#
+  • Familiarity with database technology such as MySQL (Essential)
+  • Basic Knowledge in 3D Object Manipulation, 3DRendering (Essential)
+  • Knowledge in Blender, Photoshop (Desirable)
+  • Knowledge in Swift (Desirable)
+  ",
   locations: "Lighthouse, Vivéa Business Park, St Pierre, Moka, Mauritius",
   employment_type: "Full-time",
   expiry_date: Date.new(2023, 12, 15),
@@ -657,7 +772,15 @@ job_13 = {
 
 job_14 = {
   title: "JAVA DEVELOPERS",
-  description: "A talented and passionate backend developer to work on Maureva-owned application. You'll work with our team of developers to build, improve and maintain our applications built using web technologies and cloud technologies.",
+  description: "As an experienced Java hire you will be assigned to projects using a vast spectrum of tools, frameworks and methodologies. You will be given the opportunity to showcase your skills as an expert, as a mentor and as an innovator. We believe in continuous investment in our people as such we provide a variety of trainings ranging from Web Development (Angular, React ) to Artificial Intelligence, Agile , DevOps as well as different levels certifications on AWS , Google Cloud Platform and Java .
+
+  What responsibilities will you have?
+  • Analysis and design of solutions based on functional requirements delivered by business analysts
+  • Implementation of solutions making use of appropriate design patterns and architectural guidelines and frameworks such as Spring, Hibernate and other project relevant frameworks
+  • Perform own code reviews and quality checks as well as performing quality audits of other team members
+  • Unit testing of own codes using Junit and other mock frameworks
+  • Continuously look at ways to automate and improve existing processes
+  ",
   locations: "3rd Floor , Orange Tower Ebène, Réduit, Mauritius",
   employment_type: "Part-time",
   expiry_date: Date.new(2023, 12, 17),
@@ -666,7 +789,17 @@ job_14 = {
 
 job_15 = {
   title: "FRONTEND ENGINEER (ANGULAR)",
-  description: "ELCA is one of the biggest independent Swiss IT company. We are currently hiring in Mauritius as our vision is to build up a center with over 200 talents. Be part of a team that makes a difference to people’s lives by creating leading-edge software.",
+  description: "Your Role:
+  • Creating reusable Angular components.
+  • Writing cross-browser compatible code in JavaScript/TypeScript (Angular 9+)
+  • Participating in the process of analysis, estimation, design, implementation, and testing of a new functionality
+  • You focus solely on the front-end side, working together with back-end experts (.NET/Java/Node.js – depending on the project)
+  • Close cooperation with the client
+  • Providing high quality standards of programming.
+  • Supporting Project Manager both in quality and in terms of staying on track with the overall project goal.
+  • Sharing knowledge within the team and Frontend Community, setting standards, having an impact on the best practices used across the company
+  • Helping other teams as a consultant in different phases of their projects (design, estimations, PoC, best practices)
+  • Supporting bid team with preparation of future projects",
   locations: "2nd Floor, Vivea Business Park,, St-Pierre, Moka, Mauritius",
   employment_type: "Full-time",
   expiry_date: Date.new(2023, 12, 18),
@@ -675,7 +808,19 @@ job_15 = {
 
 job_16 = {
   title: "SOFTWARE DEVELOPER",
-  description: "Roles and Responsibilities:Design, develop and deploy software applications,Analyse the needs of users and provide assistance/training in IT Solutions bring innovative ideas to improve existing software.",
+  description: "RESPONSIBILITIES
+  • Work on projects and participate in processes concerning the architecture of new software to meet clients’ needs.
+  • Work in several programming languages and with a variety of database systems.
+  • Create applications – analyse, design, develop and test
+  • Maintain existing applications and enhance system performance in view to provide the best support services to our customers.
+  • Assess and solve technical issues through expert knowledge in coding.
+  • Participate in customer support.
+  • Analyse, review and modify systems including documenting, designing, developing, testing, monitoring, and maintaining as specified by Management.
+  
+  QUALIFICATIONS, SKILLS & EXPERIENCE
+  • Above 2 years’ experience in Software Development.
+  • Experience in computerization projects and systems implementations.
+  • Microsoft SQL Server competencies.",
   locations: "Rue de la Democratie, Ebene Junction, Ground Floor, Suite 011, Ebene, Mauritius",
   employment_type: "Part-time",
   expiry_date: Date.new(2023, 12, 19),
@@ -683,10 +828,15 @@ job_16 = {
 }
 
 job_17 = {
-  title: "CHARGÉ DE CLIENTÈLE (FR)",
-  description: "Linkeo est un leader depuis 20 ans dans le marketing digital pour les artisans et TPE : création de sites web, référencement, applis mobiles, photos et vidéos.
-  23 000 clients, 600 employés, 40M€ CA, Linkeo se démarque par une croissance constante depuis 2000, en France et à l'international : filiales au Canada, Australie, USA, Emirats Arabes Unis et présent à l'Ile Maurice depuis 2007.
-  Reconnu par les professionnels du secteur, nous avons été National Champions en 2012 et le sommes à nouveau en 2016 dans le cadre du prestigieux European Business Awards.",
+  title: "Full Stack .NET Developer",
+  description: "The opportunity
+
+  You will join a global team of people who are currently engaged on a multi-year strategy to design and deliver a range of new functionality. As a successful candidate, you will learn from talented, fun-loving developers breaking down complex problems into simple solutions. You will have the passion for software architecture and design and will enjoy building robust scalable applications in a cross-platfoArm environment.
+  
+  Your Key Responsibilities
+  
+  Your role is a key contributor to all facets of the delivery process aligned to this strategy. You will contribute to technical analysis and design of our application projects and assist in our efforts to move to Artificial Intelligence.
+  ",
   locations: "4ème étage, batiment Columbia Court, Angle avenue Draper & Route St Jean, Quatre Bornes, Mauritius",
   employment_type: "Full-time",
   expiry_date: Date.new(2023, 12, 20),
@@ -694,8 +844,26 @@ job_17 = {
 }
 
 job_18 = {
-  title: "POWER PLATFORM DEVELOPER",
-  description: "SD Worx is a leading European provider of Payroll & HR services with global reach. SD Worx’s +4000 employees operate in countries all over Europe and in Mauritius",
+  title: "React/Javascript Frontend Senior Developer",
+  description: "General Description
+
+  This role is for an experienced JavaScript developer to work on a new platform build using
+  
+  modern Web technologies (Javascript, Redux, React). This person will be responsible for the
+  
+  development of new features and be accountable for the overall success of deliveries including
+  
+  analysis and design, development, deployment, optimization and day to day operations. You will
+  
+  be working within a multi-disciplinary team including UX/VD designers, UI and server- side
+  
+  developers.
+  
+  Qualifications and experience requirements:
+  
+   University degree in Computer Science, Engineering or equivalent
+  
+   3-5 years of relevant experience",
   locations: "Rue du Savoir, 11th Floor NEX Tower Cybercity,72201, Ebene, Mauritius, Cybercity, Mauritius",
   employment_type: "Part-time",
   expiry_date: Date.new(2023, 12, 21),
@@ -703,8 +871,19 @@ job_18 = {
 }
 
 job_19 = {
-  title: "QA-SOFTWARE TEST ANALYST",
-  description: "Astek Mauritius supports, locally and internationally, key accounts in their innovation and R&D strategy. Do you have significant experience as a Tester?",
+  title: "Junior Developer",
+  description: "Work within Ocorian's Mauritius-based development team to develop in-house applications in support of internal business processes. It is likely that this role will expand to include tools used across Ocorian's global sites.
+
+  Key Responsibilities
+  • To undertake development under the guidance of senior colleagues.
+  • To operate within a formal regulated environment where coding standards and change control are strictly adhered to.
+  • While specifications are likely to have been gathered and collated by others, some engagement with end-users of systems is anticipated.
+  
+  Skills, Knowledge & Expertise
+  Qualifications
+  • Ideally educated to degree standard bur experience in an equivalent role is acceptable.
+  Knowledge / Skills / Experience
+  ",
   locations: "Tower A, Level 12, 1 Cybercity, Ebene,Réduit, Mauritius",
   employment_type: "Full-time",
   expiry_date: Date.new(2023, 12, 23),
@@ -712,7 +891,7 @@ job_19 = {
 }
 
 job_20 = {
-  title: "CONTROLEUR QUALITE WEB",
+  title: "Python Developer",
   description: "WSHOP est une Plateforme SaaS de Commerce Digitale Unifiée, qui regroupe tous les outils indispensables pour déployer l'eCommerce et la Transformation Digitale des points de vente physique de nos clients.",
   locations: "Lighthouse, Vivéa Business Park, St Pierre,, Moka, Mauritius",
   employment_type: "Part-time",
@@ -722,7 +901,22 @@ job_20 = {
 
 job_21 = {
   title: "WEB DESIGNER & INTÉGRATEUR WEB",
-  description: "Groupe Hisi est un fournisseur de solutions Clouds et de services d’infogérance sur mesure en France. Nous accompagnons les entreprises dans leur transformation numérique tout en sécurisant leurs environement critiques..",
+  description: "We are looking for Python developers from Junior level (OOP experience ready to be cross-skilled) to Experienced veterans to join Intelligent Engineering Services group within Accenture Technology Mauritius.
+
+  What responsibilities will you have?
+  
+  - Django as a web development framework
+  
+  - Able to implement and consume REST APIs
+  
+  - Knowledge of using Python for automation and machine learning is a plus
+  
+  - Provide clear and precise reporting to management
+  
+  - Provide overview of project issues, impediments and risks in a proactive manner
+  
+  - To mentor and coach junior resources
+  ",
   locations: "Route Royale, Pointe aux canonniers, Mauritius",
   employment_type: "Full-time",
   expiry_date: Date.new(2023, 12, 24),
@@ -730,8 +924,14 @@ job_21 = {
 }
 
 job_22 = {
-  title: "WEB DESIGNER",
-  description: "Groupe Hisi est un fournisseur de solutions Clouds et de services d’infogérance sur mesure en France. Nous accompagnons les entreprises dans leur transformation numérique tout en sécurisant leurs environement critiques..",
+  title: "Junior Analyst Programmer",
+  description: " Writing of programming scripts to enhance functionality and/or performance of internal applications and software, as necessary and without anomalies or bugs.
+  • Plan and execute tasks or tickets according to instructions given within a reasonable timeframe, while ensuring that the program standards are respected.
+  • Verify that the lines of coding are well committed to avoid losses.
+  • Effect unitary tests and integration on respective codes.
+  • Provide increase coverage on tests.
+  • Share knowledge on the applications and tools.
+  • Conduct research on emerging application development software products, languages, and standards.",
   locations: "Route Royale, Pointe aux canonniers, Mauritius",
   employment_type: "Full-time",
   expiry_date: Date.new(2023, 12, 24),

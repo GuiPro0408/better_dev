@@ -2,3 +2,8 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import "bootstrap"
+
+//= require turbolinks
+import "trix"
+import "@rails/actiontext"
+

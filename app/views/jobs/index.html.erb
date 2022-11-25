@@ -1,3 +1,9 @@
+<style>
+	.user-link:hover {
+		text-decoration: none;
+	}
+</style>
+
 <div class="container margTop6">
 	<div class="row">
 		<div class="col-md-12 d-flex justify-content-center">
@@ -19,22 +25,27 @@
 			<% end %>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row justify-content-center">
 		<% if current_user.developer == false %>
-			<%= link_to("Create A job", new_job_path,  class: 'btn btn-primary my-3') %>
+			<div class = "text-center">
+				<%= link_to("Add a job &nbsp <i class='fa-solid fa-plus'></i>".html_safe, new_job_path,  class: 'btn btn-flat my-3') %>
+			</div>
 		<% end %>
 
 		<% @jobs.each do |job| %>
-			<div class="col-md-5 card p-3 margBott2 marg-neg" >
+			<div class="col-md-5 card p-3 margBott2 marg-neg position-relative" >
 				<p class="type d-flex"><%= job.employment_type%></p>
-				<p><%= job.title %></p>
+				<p class = "fw-bold"><%= job.title %></p>
 				<p><%= truncate job.description, length: 200 %></p>
 				<p><%= job.expiry_date %></p>
-				<p>By <%= job.user.nickname %></p>
+				<div class = "d-flex align-items-center mb-4 gap-1">
+					<div>By</div> 
+					<div class = "fw-bold"><%= link_to(job.user.nickname, user_show_path(job.user), target: "_blank", class: 'text-dark user-link') %></div>
+				</div>
 
 				<%= link_to("Read More", job_path(job), class: 'btn-highlight d-flex text-black') %>
 				<% if job.user == current_user %>
-					<%= link_to("Edit", edit_job_path(job), class: 'btn btn-info') %>
+					<%= link_to('<i class="fa-solid fa-pen-to-square"></i>'.html_safe, edit_job_path(job), class: 'edit-job-btn') %>
 				<% end %>
 			</div>
 		<% end %>

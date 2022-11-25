@@ -4,16 +4,18 @@
 }
 
 .navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+	justify-content: space-between;
+	background: white;
 	padding: 17px 0px 9px 0;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 1000 !important;
+
 	.navbar-collapse {
 		flex-grow: 0;
 	}
+
 	.navbar-brand img {
 		width: 40px;
 	}
@@ -24,14 +26,17 @@
 	.hover-transform img {
 		transform: scale(1);
 		transition: $transitionTimingFast;
+
 		&:hover {
 			transform: scale(0.95);
 			transition: $transitionTimingFast;
 		}
 	}
 }
+
 .nav-item.active {
 	position: relative;
+
 	a.nav-link.hover-animation {
 		color: $gray;
 		font-family: $primaryFont;
@@ -39,6 +44,7 @@
 		font-size: 1rem;
 		letter-spacing: 1.2px;
 		text-transform: uppercase;
+
 		&:before {
 			position: absolute;
 			content: '';
@@ -50,6 +56,7 @@
 			height: 2px;
 			transition: $transitionTimingFast;
 		}
+
 		// Hover state
 		&:hover {
 			&:before {
@@ -66,8 +73,10 @@
 		}
 	}
 }
+
 .nav-item {
 	position: relative;
+
 	a.nav-link.hover-animation {
 		color: $gray;
 		font-family: $primaryFont;
@@ -75,6 +84,7 @@
 		font-size: 1rem;
 		letter-spacing: 1.2px;
 		text-transform: uppercase;
+
 		&:before {
 			position: absolute;
 			content: '';
@@ -86,6 +96,7 @@
 			height: 2px;
 			transition: $transitionTimingFast;
 		}
+
 		// Hover state
 		&:hover {
 			&:before {
@@ -108,6 +119,7 @@
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
+
 	.image {
 		display: flex;
 		z-index: 2;
@@ -121,6 +133,7 @@
 			z-index: 1;
 			transform: translate(-15rem, 8px);
 			transition: $transitionTimingSlow;
+
 			b {
 				text-transform: uppercase;
 				color: $indigoDye;
@@ -128,6 +141,7 @@
 				font-family: $primaryFont;
 			}
 		}
+
 		&:hover {
 			.text {
 				transform: translate(-1.1rem, 8px);

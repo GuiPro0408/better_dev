@@ -1,4 +1,9 @@
+
 <div class="container margTop7 margBott3">
+
+  <% content_for :meta_title, "#{@job.title} is on #{DEFAULT_META["meta_product_name"]}" %>
+  <% content_for :meta_description, @job.description %>
+
 	<div class="row">
 		<div class="col-md-12 d-flex justify-content-center">
 			<h1 class="design-heading">
