@@ -58,4 +58,27 @@ $border-radius-sm: 2px;
 }
 body {
 	background: white;
+	display: flex;
+	flex-direction: column;
+}
+.margTop7 {
+	margin-top: 7rem;
+}
+.margBott7 {
+	margin-bottom: 7rem;
+}
+.margTop6 {
+	margin-top: 6rem;
+}
+.margBott6 {
+	margin-bottom: 6rem;
+}
+.minHeight89 {
+	min-height: 89vh !important;
+}
+.minHeight70 {
+	min-height: 70vh !important;
+}
+body {
+	background: asset_url("background.jpg");
 }

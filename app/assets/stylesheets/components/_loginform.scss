@@ -1,0 +1,38 @@
+.form-check-label.boolean.optional {
+	vertical-align: sub !important;
+}
+// .form-check-input:checked {
+// 	background-color: #baa2ff;
+// 	border-color: #baa2ff;
+// }
+// .form-check-input:focus {
+// 	border-color: #742de67d;
+// 	outline: 0;
+// 	box-shadow: 0 0 3px 0rem #670bff7d;
+// }
+
+// .form-control:focus {
+// 	outline: 0;
+// 	box-shadow: 0 0 0 0.25rem #670bff29;
+// }
+
+
+// .form-control, .form-select, input#user_email {
+// 	background: #7736dc26 !important;
+// 	border: none;
+// 	&:focus {
+// 	box-shadow: 0 0 3px 0rem #670bff7d;
+// 	}
+// }
+
+.form-check-input {
+	background: #7736dc26 !important;
+	&:checked {
+		background: #7736dc26 !important;
+	}
+	&:focus {
+		border-color: #742de67d;
+	outline: 0;
+	box-shadow: 0 0 3px 0rem #670bff7d;
+	}
+}

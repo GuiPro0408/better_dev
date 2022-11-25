@@ -1,0 +1,146 @@
+<div class="container">
+	<div class="row">
+		  <div class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body text-center">
+            <% if @user.image_url.present? %>
+              <img src="<%= @user.image_url %>" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+            <% else %>
+              <img src="https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+            <% end %>
+
+            <h5 class="my-3"><%= @user.nickname %></h5>
+						<div class="my-3">
+							<a href="<%= @user.linkedin_url %>"><i class="fa-brands fa-linkedin-in fa-lg text-primary" style="color: #333333;"></i></a>
+              <a href="<%= @user.website_url %>"><i class="fas fa-globe fa-lg text-warning" style="color: #333333;"></i></a>
+						</div>
+            <% if @user.developer == true && @user.type_of_developers.present? %>
+              <% type_of_developers = @user.type_of_developers %>
+            <% else %>
+              <% type_of_developers = "Web Developer" %>
+            <% end %>
+
+
+
+            <% type = @user.developer ? type_of_developers : "Recruiter" %>
+            <p class="text-muted mb-1"><%= type %></p>
+            <p class="text-muted mb-4"><%= @user.address %></p>
+            <p class="text-muted mb-4"><%= @user.bio %></p>
+            <% if current_user == @user%>
+              <%= link_to("Edit my profile", edit_user_registration_path, class: 'btn btn-primary') %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+			<div class="col-md-8">
+				<div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Full Name</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><%= @user.nickname %></p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Email</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><%= @user.email %></p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Mobile</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">(230) <%= @user.mobile_phone %></p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Address</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><%= @user.address %></p>
+              </div>
+            </div>
+            <% if @user.developer == true %>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Experience Years</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0"><%= @user.experience_year %></p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Education Level</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0"><%= @user.education_level %></p>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+			</div>
+	</div>
+</div>
+
+
+
+<%#  %>
+<section>
+  <div class="container py-5">
+    <div class="row">
+
+      <div class="col-lg-8">
+
+
+        <% if @user.developer && current_user == @user %>
+          <div class="card py-3" style = "height:500px;overflow-y: scroll;">
+            <h2 class ="text-center mb-4">My Applications History</h2>
+            <% @user.applications.each do |application| %>
+              <div class="p-4 border shadow-sm mb-4 mx-auto bg-light" style = "width:90%;">
+                <div class="col">
+                  <div class="profile-info">
+                    <h4><%= application.job.title %></h4>
+                    <% if application.status == 'accepted' %>
+                      <% status_color = 'text-success' %>
+                    <% elsif application.status == 'rejected' %>
+                      <% status_color = 'text-danger' %>
+                    <% else %>
+                      <% status_color = 'text-warning' %>
+                    <% end %>
+                    <span class="<%= status_color %> fw-bold"><%= application.status.capitalize %></span>
+                    <h5 class = "mt-4 fw-bold">Message :</h5>
+                    <div class="border border-1 p-2 mb-3">
+                      <% application.message.split("\n").each do |para| %>
+                        <h6 class = "pt-1 text-muted"><%= para %></h6>
+                      <% end %>
+                    </div>
+
+                    <h6>Date : <%= application.created_at.strftime("%Y-%m-%d") %></h6>
+                    <% if application.status == 'pending' %>
+                      <%= link_to "Delete", job_application_path(application.job_id), class: 'btn btn-danger', data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</section>
