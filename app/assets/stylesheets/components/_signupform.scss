@@ -1,0 +1,10 @@
+.form-control, .form-select, input#user_email {
+	background: #7736dc26 !important;
+	border: none;
+	&:focus {
+	box-shadow: 0 0 3px 0rem #670bff7d;
+	}
+}
+.background-custom {
+	background: #670bff7d;
+}

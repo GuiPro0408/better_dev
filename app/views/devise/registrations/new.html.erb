@@ -1,35 +1,41 @@
-<h2>Sign up</h2>
+<div class="container margTop6 minHeight89">
+	<div class="row ">
+		<div class="col-md-12 d-flex justify-content-center">
+			<h1 class="design-heading"><span class="highlight highlight-underline" style="background-color:#ff7eff;"><span class="highlight-word">Sign up<span class="highlight-border" style="background-color:#ff7eff;"></span></span></h1>
+		</div>
+	</div>
+	<div class="row">
+		<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: :false }) do |f| %>
+		<%= f.error_notification %>
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: :false }) do |f| %>
-  <%= f.error_notification %>
+		<div class="form-inputs">
+			<%= f.input :nickname,
+									required: true,
+									autofocus: true,
+									input_html: { autocomplete: "nickname" }%>
+			<%= f.input :developer,
+									label: 'I am a',
+									as: :select, collection: [['Developer',true], ['Recruiter',false]],
+									required: true,
+									autofocus: true,
+									input_html: { autocomplete: "developer" }%>
+			<%= f.input :email,
+									required: true,
+									autofocus: true,
+									input_html: { autocomplete: "email" }%>
+			<%= f.input :password,
+									required: true,
+									hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+									input_html: { autocomplete: "new-password" } %>
+			<%= f.input :password_confirmation,
+									required: true,
+									input_html: { autocomplete: "new-password" } %>
+		</div>
 
-  <div class="form-inputs">
-    <%= f.input :nickname,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "nickname" }%>
-    <%= f.input :developer,
-                label: 'I am a',
-                as: :select, collection: [['Developer',true], ['Recruiter',false]],
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "developer" }%>
-    <%= f.input :email,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "email" }%>
-    <%= f.input :password,
-                required: true,
-                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation,
-                required: true,
-                input_html: { autocomplete: "new-password" } %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+		<div class="form-actions">
+			<%= f.button :submit, "Sign up", class: "btn btn-flat" %>
+		</div>
+		<%= render "devise/shared/links" %>
+	<% end %>
+	</div>
+</div>

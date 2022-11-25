@@ -1,66 +1,77 @@
-<div class="container">
+<div class="container margTop7 margBott3">
 	<div class="row">
-		<div class="col-3">
-    <h3>Info on Recruiter</h3>
-    <div class="card mt-5">
-      <div class = "d-flex justify-content-between border-bottom align-items-center p-2">
-        <h2><%= @job.user.nickname %></h2>
-        <%= image_tag @job.user.image_url, width: "70px", class: "rounded-circle" %>
-      </div>
-      <div class = "px-2">
-        <h4>Bio</h4>
-        <h6><%= @job.user.bio %></h6>
-      </div>
-    </div>
-  </div>
-	</div>
-	<div class="row">
-		<div class = "col-12">
-			<h2><%= @job.title %></h2>
-			<p>By : <%= @job.user.nickname %></p>
-		</div>
-		<div class = "col-1">
-			<% if @job.user == current_user %>
+		<div class="col-md-12 d-flex justify-content-center">
+			<h1 class="design-heading">
+				<span class="highlight highlight-underline" style="background-color:#ff7eff;">
+					<span class="highlight-word"><%= @job.user.nickname %> - <%= @job.title %><span class="highlight-border" style="background-color:#ff7eff;"></span></span>
+				</h1>
+			</div>
+			<div class = "col-1">
+				<% if @job.user == current_user %>
 				<%= link_to("Delete", job_path(@job), class: 'btn btn-danger btn-sm', data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}) %>
-			<% end %>
+				<% end %>
+			</div>
 		</div>
-	</div>
-	<div class="row px-2">
-  <div class="col-12">
-    <h3>Job Details</h3>
+		<div class="row margTop2">
+			<div class="col-md-5">
+				<%= image_tag @job.user.image_url, class: "", width: "450px" %>
+			</div>
+			<div class="col-md-6">
+				<h2 class="design-heading pt-2">
+					<span class="highlight highlight-underline" style="background-color:#ff7eff;">
+						<span class="highlight-word1">Overview <span class="highlight-border" style="background-color:#ff7eff;"></span></span>
+					</h2>
+					<div class = "margTop1">
+						<h4 class="squared-design">Bio</h4>
+						<p class="paragraph">
+							<%= @job.user.bio %>
+						</p>
+						<h4 class="squared-design">Job Description </h4>
+						<p class="paragraph">
+							<% @job.description.split("\n").each do |para| %>
+							<p class="paragraph">
+								<%= para %>
+							</p>
+							<% end %>
+							<h4 class="squared-design">Location</h4>
+							<p class="paragraph">
+								<%= @job.locations %>
+							</p>
+							<h4 class="squared-design">Employment Type</h4>
+							<p class="paragraph">
+								<%= @job.employment_type %>
+							</p>
+							<h4 class="squared-design">Expiry date</h4>
+							<p class="paragraph">
+								<%= @job.expiry_date %>
+							</p>
+							<% if @job.user == current_user %>
+							<%= link_to("Applied Developers", applied_job_path, class: 'btn btn-primary') %>
+							<% end %>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row margTop3">
+				<% if current_user.developer == true && !@existed_application.present? %>
 
-    <h5 class = "mt-4 fw-bold">Description :</h5>
-    <div class="border border-1 p-2 mb-3">
-      <% @job.description.split("\n").each do |para| %>
-        <p class = "pt-1"><%= para %></p>
-      <% end %>
-    </div>
-    <p><strong>Locations :</strong> <%= @job.locations %></p>
-    <p><strong>Type of Emploment :</strong> <%= @job.employment_type %></p>
-    <p><strong>Expiry Date : </strong><%= @job.expiry_date %></p>
-
-    <% if @job.user == current_user %>
-      <%= link_to("Applied Developers", applied_job_path, class: 'btn btn-primary') %>
-    <% end %>
-  </div>
-
-
-</div>
-
-<% if current_user.developer == true && !@existed_application.present? %>
-  <hr>
-  <h3>Apply for this job</h3>
-  <div class="form-wrapper">
-    <%= simple_form_for [@job, @application] do |f| %>
-      <div class="form-inputs">
-        <%= f.input :message %>
-        <%= f.input :status, input_html: {value: "pending", class: 'd-none'}, label: false %>
-      </div>
-      <div class="form-actions">
-        <%= f.submit "Apply", :class => "btn btn-primary" %>
-      </div>
-    <% end %>
-  </div>
-<% end %>
-
-</div>
+			<h1 class="design-heading text-center">
+				<span class="highlight highlight-underline" style="background-color:#ff7eff;">
+					<span class="highlight-word">Apply now<span class="highlight-border" style="background-color:#ff7eff;"></span></span>
+				</h1>
+			<div class="form-wrapper">
+				<%= simple_form_for [@job, @application] do |f| %>
+				<div class="form-inputs">
+					<%= f.input :message, class: "squared-design" %>
+					<%= f.input :status, input_html: {value: "pending", class: 'd-none hello'}, label: false %>
+				</div>
+				<div class="form-actions">
+					<%= f.submit "Apply", :class =>
+					"button-apply" %>
+				</div>
+				<% end %>
+			</div>
+			<% end %>
+				</div>
+			</div>
+		</div>

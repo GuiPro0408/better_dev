@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container margTop6 minHeight70">
 	<div class="row">
 		<div class="col-md-12">
 		<h1 class="design-heading text-center"> <span class="highlight highlight-underline" style="background-color:#ff7eff;"><span class="highlight-word">Log in<span class="highlight-border" style="background-color:#ff7eff;"></span></span></h1>
@@ -16,13 +16,9 @@
 
 				<div class="form-actions">
 					<%= f.submit "Log in", :class => "btn btn-flat"   %>
+					<%= render "devise/shared/links" %>
 				</div>
 <% end %>
 		</div>
 	</div>
 </div>
-
-
-
-
-<%= render "devise/shared/links" %>

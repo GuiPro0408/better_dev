@@ -25,6 +25,23 @@
 				z-index: -1;
 			}
 		}
+		.highlight-word1 {
+			position: relative;
+			z-index: 1;
+			.highlight-border {
+				background-color: #ff7eff;
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 10%;
+				width: calc(50% + 0.3em);
+				height: 25%;
+				margin-left: -0.15em;
+				transform: skew(-12deg) translateX(0);
+				background: #ff7eff;
+				z-index: -1;
+			}
+		}
 	}
 }
 .search-form-control {
