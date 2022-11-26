@@ -23,7 +23,7 @@ dev_1 = {
   bio: "A passionate tech guy who loves to code and discover new things. Tech stack : HTML, CSS, JS, RUBY, RUBY ON RAILS",
   linkedin_url: "https://www.linkedin.com/in/danjavia/",
   image_url: "https://xsgames.co/randomusers/assets/avatars/male/1.jpg",
-  type_of_developers: type_of_developers.sample
+  type_of_developers: "Front-end developer"
 }
 
 dev_2 = {
@@ -133,7 +133,7 @@ dev_7 = {
   and the main languages in my tech stack are JavaScript, React, and of course HTML/CSS. I’m a lifelong learner (currently taking a course on building AI chatbots with Python!) and love to read, run, and find new bubble tea shops in New York City.",
   linkedin_url: "http://linkedin.com/bipinramkh",
   image_url: "bipin.png",
-  type_of_developers: type_of_developers.sample
+  type_of_developers: "Front-end developer"
 }
 
 dev_8 = {
@@ -328,7 +328,7 @@ dev_19 = {
   bio: "I am Guillaume, resident of Cap Malheureux. I work in marketing company situated in France. Regarding my studies, I don't have a major diploma, I just barely have my SC but I am convinced that I can achieve my goals. It's the skills that count. Web development has interested me for a long time and since there was no real institute in Mauritius to train us in this area. Now that I know Le Wagon, I am ready to embark on this adventure and make my passion my job.",
   linkedin_url: "https://www.linkedin.com/in/guillaumejuste0408/",
   image_url: "guillaume.jpg",
-  type_of_developers: type_of_developers.sample
+  type_of_developers: "Fullstack developer"
 }
 
 dev_20 = {
