@@ -10,7 +10,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 1000 !important;
+	z-index: 100000000 !important;
 
 	.navbar-collapse {
 		flex-grow: 0;
@@ -131,7 +131,7 @@
 			font-family: $secondaryFont;
 			text-transform: uppercase;
 			z-index: 1;
-			transform: translate(-15rem, 8px);
+			transform: translate(-15rem, 0.3rem);
 			transition: $transitionTimingSlow;
 
 			b {
@@ -144,7 +144,7 @@
 
 		&:hover {
 			.text {
-				transform: translate(-1.1rem, 8px);
+				transform: translate(-1.1rem, 0.3rem);
 				transition: $transitionTimingSlow;
 			}
 		}

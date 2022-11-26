@@ -10,8 +10,16 @@
   }
 </style>
 
-<section style="background-color: #eee;">
+<section>
   <div class="container py-5">
+		<div class="row margTop6 margBott3">
+		<div class="col-md-12 text-center">
+			<h1 class="design-heading text-center">
+				<span class="highlight highlight-underline" style="background-color:#ff7eff;">
+					<span class="highlight-word">Profile<span class="highlight-border" style="background-color:#ff7eff;"></span></span>
+				</h1>
+		</div>
+		</div>
     <div class="row">
       <div class="col-lg-5">
         <div class="card mb-4">
@@ -21,7 +29,7 @@
             <% else %>
               <img src="https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
             <% end %>
-            
+
             <h5 class="my-3 fw-bold"><%= @user.nickname %></h5>
             <div class = "mb-3">
               <%= link_to('<i class="fas fa-globe"></i>'.html_safe, @user.website_url, class: 'user-social-btn me-2', target: "_blank") %>
@@ -43,12 +51,12 @@
           </div>
         </div>
 
-        
+
       </div>
 
-      <div class="col-lg-7">
+      <div class="col-lg-7 ">
 
-        <div class="card mb-4">
+        <div class="card mb-4 sticky-top">
           <div class="card-body p-4">
             <div class="row">
               <div class="col-sm-3">
@@ -107,8 +115,8 @@
             <% end %>
           </div>
         </div>
-        
-        
+
+
       </div>
     </div>
 
@@ -139,8 +147,8 @@
                         <h6 class = "pt-1 text-muted"><%= para %></h6>
                       <% end %>
                     </div>
-                    
-                    
+
+
                     <% if application.status == 'pending' %>
                       <div class = "text-end">
                         <%= link_to '<i class="fa-solid fa-trash"></i>'.html_safe, job_application_path(application.job_id), class: 'btn btn-delete', data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>

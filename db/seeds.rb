@@ -543,13 +543,13 @@ job_1 = {
 }
 
 job_2 = {
-  title: "React Native Engineer (Intermediate)",
+  title: "React Native Engineer",
   description: "We are looking for an experienced frontend developer who demonstrates a high level of curiosity and keeps up with the latest technologies. You have developed and maintained multiple frontend applications throughout the entirety of their lifecycle.
 
- 
+
 
   Responsibilities:
- 
+
  Architect and develop robust web applications
  Take ownership of tasks from start to completion
  Work closely with other engineers, product managers and designers
@@ -567,21 +567,21 @@ job_3 = {
   description: "We are searching for frontend web developer with good knowledge of JavaScript.
 
   The requirements are as follows:
-  
+
   - In-depth knowledge of modern Web technologies – JavaScript, Vuejs, Angular or React.
-  
+
   - Knowledge of HTML and CSS
-  
+
   - Thorough understanding of Vue.js and its core principles
-  
+
   - Experience with common front-end development tools such as Babel, Webpack, NPM, etc.
-  
+
   - Familiarity with RESTful APIs
-  
+
   - Familiarity with code versioning tools (Git)
-  
+
   - Understanding of architecture and design across all systems
-  
+
   - work experience (> 1 year & < 5 years)",
   locations: "Grand Baie La Croisette, ABZ Global Solutions Ltd",
   employment_type: "Part-time",
@@ -596,9 +596,9 @@ job_4 = {
   Compétences demandées :
   • Connaissance en développement sur PHP
   • Maîtrise des technologies (PHP, HTML, CSS, MySQL)
-  
+
   Profil :
-  
+
   Vous êtes diplômé(e) d’une formation en informatique avec une première expérience réussie dans le développement d’applications. Vous aimez investir dans votre travail. Nous avons un poste avec des opportunités d'évolution.",
   locations: "Royal Road - Pointe aux Canonniers, Grand Bay, Mauritius",
   employment_type: "Temporary",
@@ -611,11 +611,11 @@ job_5 = {
   description: "We are excited to be looking for candidates in Mauritius to fill this role. There is one position available across these locations with work-from-home flexibility.
 
   Push the boundaries of tech. In your sweatpants.
-  
+
   We’re looking for an experienced Backend Developer (RASA) to help us change the way the world works, with anytime, anywhere, any-device productivity. Here, you’ll design and develop highly available services for users from all over the world with our Parallels team.
-  
+
   The top creative and technical minds could work anywhere. So why are so many of them choosing Corel?
-  
+
   Here are three reasons:
   • This is the moment. It’s an exciting time at Corel, with new leadership, a refreshed brand, and a whole new approach to changing the way the world works. We’re at the forefront of a movement, and we want you to ride this wave with us.
   • We want you to be you. Too often, companies tell you about their culture and then expect you to fit it. Our culture is built from the people who work here. We want you to feel safe to be who you are, take risks, and show us what you’ve got.",
@@ -629,7 +629,7 @@ job_6 = {
   description: "SD Worx is a leading European provider of Payroll & HR services with global reach. We have offices in Europe and an office in Mauritius. Our goal? We bring people solutions to life. So companies of any size can turn Human Resources into a source of value for the business and the people in it. Our people solutions span the entire employee journey, from getting people paid to attracting, rewarding, and developing talent.
 
   The Senior Software Developer will have to ensure the delivery of quality software solutions via development, testing or support activities and is also actively involved in providing support to junior team members via reviewing and coaching activities if required.
-  
+
   Essential Duties
   • Apply technical knowledge, skills and expertise to provide development, testing or support service to clients and customers
   • Achieve delivery of core/customized products in accordance with agreed schedules, procedures and standards
@@ -645,13 +645,13 @@ job_7 = {
   description: "Understand the requirements of specifications, marketing briefs, etc. and formalize them, decline in software solution, user stories
 
   Produce: specifications, code, tests, settings, corrective analyzes, performance evaluation, recipes, forecast, tooling integration in production.
-  
+
   Interact / Share with management & stakeholders, improve progress / planning adequacy, ability to produce, incident management, product implementation.
-  
+
   Share: good practices, pair programming, needs review, etc.
-  
+
   Keep up to date: keep abreast of and apply changes to tools, business or functional applications, technical innovations & methodologies, digital development.
-  
+
   Qualifications:
   • Visual Basic or VB.NET
   • SQL, mySQL Knowledge
@@ -671,7 +671,7 @@ job_8 = {
   description: "Vous intégrerez l'équipe .Net qui se structure en méthodologie Agile. Développant nos propres outils en interne, vous vous occupez à la fois de la conception et de la réalisation de projets innovants à forte valeur ajoutée.
 
   Vous participez au développement et à l'apport d'innovations de notre LMS (Learning Management System). Il s'agit de notre plateforme d'e-learning (AppMobile, Web, Quizz, Classe virtuelle, ect…) permettant à nos 120K anciens apprenants.
-  
+
   Vous faites preuve de créativité et d'autonomie dans votre activité vous permettant de prendre en charge un développement dans sa globalité.",
   locations: "Newry Complex, St-Jean Road, Quatre-Bornes, Quatre-Bornes, Mauritius",
   employment_type: "Freelance",
@@ -684,7 +684,7 @@ job_9 = {
   description: "The selected candidate will be taken on the Youth Employment Programme and will have the possibility to be confirmed upon good performance, after completion of one year.
 
   If you are agile and have a pioneering mind-set, join a winning team so that we can evolve together.
-  
+
   Outline of job role and purpose:
   • Assist in software customisation and software programming.
   • Facilitate the successful analysis, design, development, implementation and maintenance of software solutions for clients, including off-site and on-site work.
@@ -756,7 +756,7 @@ job_13 = {
   • Develop and manage well-functioning applications
   • Test software to ensure responsiveness and efficiency
   • Troubleshoot, debug and upgrade software
-  
+
   EXPERIENCE & QUALIFICATION REQUIRED
   • Proficiency with programming languages like PHP, Java and C#
   • Familiarity with database technology such as MySQL (Essential)
@@ -788,7 +788,7 @@ job_14 = {
 }
 
 job_15 = {
-  title: "FRONTEND ENGINEER (ANGULAR)",
+  title: "FRONTEND ENGINEER",
   description: "Your Role:
   • Creating reusable Angular components.
   • Writing cross-browser compatible code in JavaScript/TypeScript (Angular 9+)
@@ -816,7 +816,7 @@ job_16 = {
   • Assess and solve technical issues through expert knowledge in coding.
   • Participate in customer support.
   • Analyse, review and modify systems including documenting, designing, developing, testing, monitoring, and maintaining as specified by Management.
-  
+
   QUALIFICATIONS, SKILLS & EXPERIENCE
   • Above 2 years’ experience in Software Development.
   • Experience in computerization projects and systems implementations.
@@ -828,13 +828,13 @@ job_16 = {
 }
 
 job_17 = {
-  title: "Full Stack .NET Developer",
+  title: " .NET Developer",
   description: "The opportunity
 
   You will join a global team of people who are currently engaged on a multi-year strategy to design and deliver a range of new functionality. As a successful candidate, you will learn from talented, fun-loving developers breaking down complex problems into simple solutions. You will have the passion for software architecture and design and will enjoy building robust scalable applications in a cross-platfoArm environment.
-  
+
   Your Key Responsibilities
-  
+
   Your role is a key contributor to all facets of the delivery process aligned to this strategy. You will contribute to technical analysis and design of our application projects and assist in our efforts to move to Artificial Intelligence.
   ",
   locations: "4ème étage, batiment Columbia Court, Angle avenue Draper & Route St Jean, Quatre Bornes, Mauritius",
@@ -844,25 +844,25 @@ job_17 = {
 }
 
 job_18 = {
-  title: "React/Javascript Frontend Senior Developer",
+  title: "Senior React Developer",
   description: "General Description
 
   This role is for an experienced JavaScript developer to work on a new platform build using
-  
+
   modern Web technologies (Javascript, Redux, React). This person will be responsible for the
-  
+
   development of new features and be accountable for the overall success of deliveries including
-  
+
   analysis and design, development, deployment, optimization and day to day operations. You will
-  
+
   be working within a multi-disciplinary team including UX/VD designers, UI and server- side
-  
+
   developers.
-  
+
   Qualifications and experience requirements:
-  
+
    University degree in Computer Science, Engineering or equivalent
-  
+
    3-5 years of relevant experience",
   locations: "Rue du Savoir, 11th Floor NEX Tower Cybercity,72201, Ebene, Mauritius, Cybercity, Mauritius",
   employment_type: "Part-time",
@@ -878,7 +878,7 @@ job_19 = {
   • To undertake development under the guidance of senior colleagues.
   • To operate within a formal regulated environment where coding standards and change control are strictly adhered to.
   • While specifications are likely to have been gathered and collated by others, some engagement with end-users of systems is anticipated.
-  
+
   Skills, Knowledge & Expertise
   Qualifications
   • Ideally educated to degree standard bur experience in an equivalent role is acceptable.
@@ -900,21 +900,21 @@ job_20 = {
 }
 
 job_21 = {
-  title: "WEB DESIGNER & INTÉGRATEUR WEB",
+  title: "INTÉGRATEUR WEB",
   description: "We are looking for Python developers from Junior level (OOP experience ready to be cross-skilled) to Experienced veterans to join Intelligent Engineering Services group within Accenture Technology Mauritius.
 
   What responsibilities will you have?
-  
+
   - Django as a web development framework
-  
+
   - Able to implement and consume REST APIs
-  
+
   - Knowledge of using Python for automation and machine learning is a plus
-  
+
   - Provide clear and precise reporting to management
-  
+
   - Provide overview of project issues, impediments and risks in a proactive manner
-  
+
   - To mentor and coach junior resources
   ",
   locations: "Route Royale, Pointe aux canonniers, Mauritius",
