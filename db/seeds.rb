@@ -132,7 +132,7 @@ dev_7 = {
   I manage everything from website navigation and layout to a company's web hosting and security architecture. My expertise lies within front-end web apps,
   and the main languages in my tech stack are JavaScript, React, and of course HTML/CSS. I’m a lifelong learner (currently taking a course on building AI chatbots with Python!) and love to read, run, and find new bubble tea shops in New York City.",
   linkedin_url: "http://linkedin.com/bipinramkh",
-  image_url: "https://xsgames.co/randomusers/assets/avatars/male/7.jpg",
+  image_url: "bipin.jpeg",
   type_of_developers: type_of_developers.sample
 }
 
@@ -327,7 +327,7 @@ dev_19 = {
   education_level: "Masters",
   bio: "I am Guillaume, resident of Cap Malheureux. I work in marketing company situated in France. Regarding my studies, I don't have a major diploma, I just barely have my SC but I am convinced that I can achieve my goals. It's the skills that count. Web development has interested me for a long time and since there was no real institute in Mauritius to train us in this area. Now that I know Le Wagon, I am ready to embark on this adventure and make my passion my job.",
   linkedin_url: "https://www.linkedin.com/in/guillaumejuste0408/",
-  image_url: "https://xsgames.co/randomusers/assets/avatars/male/19.jpg",
+  image_url: "guillaume.jpg",
   type_of_developers: type_of_developers.sample
 }
 
