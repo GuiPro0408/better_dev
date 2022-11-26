@@ -150,3 +150,7 @@
 		}
 	}
 }
+select.is-valid:not([multiple]):not([size]) {padding-right: 1.125rem !important;}
+input#job_expiry_date {
+	padding-right: 1rem;
+}
