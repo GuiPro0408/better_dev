@@ -132,7 +132,7 @@ dev_7 = {
   I manage everything from website navigation and layout to a company's web hosting and security architecture. My expertise lies within front-end web apps,
   and the main languages in my tech stack are JavaScript, React, and of course HTML/CSS. I’m a lifelong learner (currently taking a course on building AI chatbots with Python!) and love to read, run, and find new bubble tea shops in New York City.",
   linkedin_url: "http://linkedin.com/bipinramkh",
-  image_url: "bipin.jpeg",
+  image_url: "bipin.png",
   type_of_developers: type_of_developers.sample
 }
 
